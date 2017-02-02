@@ -8,7 +8,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -23,7 +22,6 @@ public class Blobolution3 extends JFrame {
     JRadioButton playRadioButton, visibleRadioButton;
     ArrayList<Blob> blobs = new ArrayList<Blob>();
     ArrayList<BlobDataFrame> dataFrames = new ArrayList<BlobDataFrame>();
-    Random rand = new Random();
     Integer pop = 0;
     boolean paused = true;
     boolean visible = true;
@@ -67,6 +65,7 @@ public class Blobolution3 extends JFrame {
             BufferedImage image = // Create an off-screen image
                     new BufferedImage((int)winX, (int)winY, BufferedImage.TYPE_INT_RGB);
             Graphics2D ig = image.createGraphics(); // Get its Graphics for drawing
+            ig.setFont(new Font("TimesRoman", Font.PLAIN, 24));
 
             // Set the background to a gradient fill
             ig.setPaint(new GradientPaint(0, 0, Color.black, (float)winX, (float)winY, Color.LIGHT_GRAY));
@@ -315,22 +314,11 @@ public class Blobolution3 extends JFrame {
             }
 
             // every 5 seconds... //
-            int seconds = 2;
+            int seconds = 5;
             if (e.getWhen() - oldEventTime > seconds*1000) {
 
-                // prevent rounding errors from decreasing population //
-                double totalHealth = 0;
-                double avgBirthHealth = 0;
-                for (Blob B : blobs) {
-                    totalHealth += B.health;
-                    avgBirthHealth += B.birthHealth;
-                }
-                avgBirthHealth /= num;
-                double healthDiff = pop*avgBirthHealth - totalHealth;
-                //while (healthDiff > 0){
                 while (num < pop){
                     blobs.add(new Blob(1, getWidth(), getHeight(), blobs));
-                    //healthDiff = pop*avgBirthHealth - totalHealth;
                     num = blobs.size();
                 }
 
@@ -423,7 +411,11 @@ public class Blobolution3 extends JFrame {
 
     public void quickTest(){
         newBlobItem.doClick();
+        try {
+            Thread.sleep(100);
+        }catch (Exception e){
 
+        }
         blobCreator.numArea.setText("300");
         blobCreator.randBox.doClick();
         //blobCreator.addButton.doClick();

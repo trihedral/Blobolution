@@ -16,9 +16,11 @@ public class NeuralNet {
 
 
     // Creates a randomly weighted neural net //
-    public NeuralNet(int numInputs, int hiddenRows, int hiddenColumns, int numOutputs, int functionType){
+    public NeuralNet(int numInputs, int hiddenRows, int hiddenColumns, int numOutputs, int functionType, boolean feedback){
+        int nI = numInputs;
+        if (feedback) nI++;
         this.functionType = functionType;
-        inputNeurons = new Neuron[numInputs];
+        inputNeurons = new Neuron[nI];
         outputNeurons = new Neuron[numOutputs];
         hiddenNeurons = new Neuron[hiddenRows][hiddenColumns];
         outputs = new ArrayList<Double>();
@@ -31,7 +33,7 @@ public class NeuralNet {
         }
         // Create first column of hidden neurons //
         for (int r=0; r<hiddenRows; r++){
-            hiddenNeurons[r][0] = new Neuron(numInputs, functionType); // one input from each input node
+            hiddenNeurons[r][0] = new Neuron(nI, functionType); // one input from each input node
         }
         // Create all other hidden neurons //
         for (int c=1; c<hiddenColumns; c++){

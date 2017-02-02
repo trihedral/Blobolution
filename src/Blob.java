@@ -31,7 +31,7 @@ public class Blob{
     public Blob(int maxPerc, double winX, double winY, ArrayList<Blob> blobs){
         rand = new Random();
         numKids = 0;
-        maxAge = Integer.MAX_VALUE;
+        maxAge = 0;     // immortal
         marked = false;
         grabbed = false;
         maxPerceivable = maxPerc;
@@ -46,7 +46,7 @@ public class Blob{
         this.blobs = blobs;
         variance = .05;
         timeInc = 17;
-        brain = new NeuralNet((maxPerceivable)*5 + 3, 5, 2, 1, 1);  // inputs, hidden rows, hidden columns, outputs, activation function type
+        brain = new NeuralNet((maxPerceivable)*5 + 3, 5, 2, 1, 1, false);  // inputs, hidden rows, hidden columns, outputs, activation function type
         generation = 0;
         color = new Color(
                 rand.nextInt(255),rand.nextInt(255),rand.nextInt(255));
@@ -155,7 +155,7 @@ public class Blob{
             p1 = p2+1; p2 = data.indexOf(' ', p1);
             int outs = Integer.parseInt(data.substring(p1, p2));
             p1 = p2+1; p2 = data.indexOf(' ', p1);
-            brain = new NeuralNet(ins, rows, cols, outs, fType);  // inputs, hidden rows, hidden columns, outputs, activation function type
+            brain = new NeuralNet(ins, rows, cols, outs, fType, false);  // inputs, hidden rows, hidden columns, outputs, activation function type
             for (int i=0; i<brain.inputNeurons.length; i++) {
                 for(int j=0; j<brain.inputNeurons[i].weights.length; j++){
                     brain.inputNeurons[i].weights[j] = Double.parseDouble(data.substring(p1, p2));
@@ -194,7 +194,7 @@ public class Blob{
             blobs.remove(this);
             return blobs;
         }
-        if (age > maxAge) return blobs; // do nothing if died of old age
+        if (maxAge > 0 && age > maxAge) return blobs; // do nothing if died of old age
         if (b.size() <= maxPerceivable) return blobs; // do nothing if there aren't enough other blobs
 
         blobs = b;
@@ -241,6 +241,7 @@ public class Blob{
         data.add(color.getRed()/255.0);
         data.add(color.getGreen()/255.0);
         data.add(color.getBlue()/255.0);
+        //data.add(brain.getOutput(0));
 
         // get neural net output //
         brain.think(data);

@@ -36,7 +36,10 @@ public class BlobCreator extends JFrame{
         oldBlob = blob;
         setup();
 
-        ageArea.setText(blob.maxAge+"");
+        if (blob.maxAge > 0) {
+            ageArea.setText(blob.maxAge + "");
+        }
+        else ageArea.setText("-");
         sizeArea.setText(blob.size+"");
         speedArea.setText(blob.maxSpeed+"");
         healthArea.setText(blob.birthHealth+"");
@@ -256,7 +259,12 @@ public class BlobCreator extends JFrame{
                 int maxPerc = Integer.parseInt(perceiveArea.getText());
                 Blob blob = new Blob(maxPerc, mainFrame.getWidth(), mainFrame.getHeight(), blobs);
                 blob.variance = Double.parseDouble(varianceArea.getText());
-                blob.maxAge = Integer.parseInt(ageArea.getText());
+                if (ageArea.getText().equals("-")){
+                    blob.maxAge = 0; // immortal
+                }
+                else {
+                    blob.maxAge = Integer.parseInt(ageArea.getText());
+                }
                 blob.maxSpeed = Double.parseDouble(speedArea.getText());
                 blob.health = Double.parseDouble(healthArea.getText());
                 blob.size = Double.parseDouble(sizeArea.getText());
@@ -270,7 +278,7 @@ public class BlobCreator extends JFrame{
                 int rows = Integer.parseInt(hiddenRowsArea.getText());
                 int cols = Integer.parseInt(hiddenColumnsArea.getText());
                 int outs = 1;
-                blob.brain = new NeuralNet(ins, rows, cols, outs, fType);  // inputs, hidden rows, hidden columns, outputs, activation function type
+                blob.brain = new NeuralNet(ins, rows, cols, outs, fType, false);  // inputs, hidden rows, hidden columns, outputs, activation function type
                 blob.maxPerceivable = Integer.parseInt(perceiveArea.getText());
                 if (randBox.isSelected()) {
                     blob.color = new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256));
