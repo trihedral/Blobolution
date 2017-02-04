@@ -22,8 +22,8 @@ public class BlobCreator extends JFrame{
     Random rand = new Random();
     JPanel colorPanel, aNNPanel, buttonPanel, previewPanel;
     JLabel rLabel = new JLabel(), gLabel = new JLabel(), bLabel = new JLabel();
-    JTextArea perceiveArea, hiddenRowsArea, hiddenColumnsArea, varianceArea, numArea,
-            ageArea, sizeArea, speedArea, healthArea;
+    JTextArea perceiveArea, hiddenRowsArea, hiddenColumnsArea, brainVarArea,
+            colorVarArea, numArea, ageArea, sizeArea, speedArea, healthArea;
     JRadioButton expRadio, oneRadio, zeroRadio;
     JCheckBox randBox, markBox;
     Blobolution3 mainFrame;
@@ -46,7 +46,8 @@ public class BlobCreator extends JFrame{
         perceiveArea.setText(blob.maxPerceivable+"");
         hiddenRowsArea.setText(blob.brain.hiddenRows+"");
         hiddenColumnsArea.setText(blob.brain.hiddenColumns+"");
-        varianceArea.setText(blob.variance+"");
+        brainVarArea.setText(blob.brainVar+"");
+        colorVarArea.setText(blob.colorVar+"");
         switch(blob.brain.functionType) {
             case 0:
                 expRadio.setSelected(true);
@@ -116,6 +117,7 @@ public class BlobCreator extends JFrame{
         colorPanel.add(redPanel);
         colorPanel.add(greenPanel);
         colorPanel.add(bluePanel);
+
     }
 
     void buildANNPanel(){
@@ -124,20 +126,25 @@ public class BlobCreator extends JFrame{
 
 
         JPanel generalPanel = new JPanel();
-        generalPanel.setLayout(new GridLayout(2,2));
+        generalPanel.setLayout(new GridLayout(3,2));
         generalPanel.setBorder(BorderFactory.createTitledBorder("General"));
         JPanel generalPanel1 = new JPanel();
         JPanel generalPanel2 = new JPanel();
         JPanel generalPanel3 = new JPanel();
         JPanel generalPanel4 = new JPanel();
+        JPanel generalPanel5 = new JPanel();
+        JPanel generalPanel6 = new JPanel();
         generalPanel1.setBorder(new EmptyBorder(1, 1, 1, 1));
         generalPanel2.setBorder(new EmptyBorder(1, 1, 1, 1));
         generalPanel3.setBorder(new EmptyBorder(1, 1, 1, 1));
         generalPanel4.setBorder(new EmptyBorder(1, 1, 1, 1));
+        generalPanel5.setBorder(new EmptyBorder(1, 1, 1, 1));
+        generalPanel6.setBorder(new EmptyBorder(1, 1, 1, 1));
         ageArea = new JTextArea(1, 3);
         sizeArea = new JTextArea(1, 3);
         speedArea = new JTextArea(1, 3);
         healthArea = new JTextArea(1, 3);
+        colorVarArea = new JTextArea(1, 3);
         generalPanel1.add(new JLabel("Max age: "));
         generalPanel1.add(ageArea);
         generalPanel2.add(new JLabel("Size: "));
@@ -146,10 +153,13 @@ public class BlobCreator extends JFrame{
         generalPanel3.add(speedArea);
         generalPanel4.add(new JLabel("Health: "));
         generalPanel4.add(healthArea);
+        generalPanel5.add(new JLabel("Color vary: "));
+        generalPanel5.add(colorVarArea);
         generalPanel.add(generalPanel1);
         generalPanel.add(generalPanel2);
         generalPanel.add(generalPanel3);
         generalPanel.add(generalPanel4);
+        generalPanel.add(generalPanel5);
 
         ButtonGroup buttonGroup = new ButtonGroup();
         JPanel activationPanel = new JPanel();
@@ -164,7 +174,7 @@ public class BlobCreator extends JFrame{
         perceiveArea = new JTextArea(1, 3);
         hiddenRowsArea = new JTextArea(1, 3);
         hiddenColumnsArea = new JTextArea(1, 3);
-        varianceArea = new JTextArea(1, 3);
+        brainVarArea = new JTextArea(1, 3);
         expRadio = new JRadioButton("1 / [ 1-exp(i) ]");
         oneRadio = new JRadioButton("i");
         zeroRadio = new JRadioButton(("0 (Brainless)"));
@@ -185,8 +195,8 @@ public class BlobCreator extends JFrame{
         detailsPanel3.add(new JLabel("Hidden Neuron Columns "));
         detailsPanel3.add(hiddenColumnsArea);
         detailsPanel3.setBorder(new EmptyBorder(1, 1, 1, 1));
-        detailsPanel4.add(new JLabel("Breeding Variance Ratio "));
-        detailsPanel4.add(varianceArea);
+        detailsPanel4.add(new JLabel("Child ANN Variance "));
+        detailsPanel4.add(brainVarArea);
         detailsPanel4.setBorder(new EmptyBorder(1, 1, 1, 1));
         detailsPanel.add(detailsPanel1);
         detailsPanel.add(detailsPanel2);
@@ -258,7 +268,8 @@ public class BlobCreator extends JFrame{
             for (int i = 0; i < num; i++) {
                 int maxPerc = Integer.parseInt(perceiveArea.getText());
                 Blob blob = new Blob(maxPerc, mainFrame.getWidth(), mainFrame.getHeight(), blobs);
-                blob.variance = Double.parseDouble(varianceArea.getText());
+                blob.brainVar = Double.parseDouble(brainVarArea.getText());
+                blob.colorVar = Double.parseDouble(colorVarArea.getText());
                 if (ageArea.getText().equals("-")){
                     blob.maxAge = 0; // immortal
                 }

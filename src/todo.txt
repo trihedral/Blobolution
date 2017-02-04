@@ -1,20 +1,23 @@
 Immigration toggle
-Immigrant traits
-Change average weight with activation function
+-Base Immigrant on random blob
+-Randomize Immigrant color
+Randomize immigrant brain
+Change average weight with activation function?
 Enable ANN feedback (memory)
 Minimize on-top windows when focus is lost
 Degree vs Radian confusion?
+Age unit confusion?
 
 
 
 BlobCreator
 -------------
-Separate field for color variance
+-Separate field for color variance
 Input own color or not to ANN
 
 
 
 BlobDataFrame
 ---------------
-Error when paused
-Show all data from Details - 372
+-Error when paused
+-Show all data from Details

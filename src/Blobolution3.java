@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -25,6 +26,7 @@ public class Blobolution3 extends JFrame {
     Integer pop = 0;
     boolean paused = true;
     boolean visible = true;
+    Random rand;
     Blobolution3 frame;
     ArrayList<Double> dataList = new ArrayList<Double>();
     BlobSorter blobSorter;
@@ -65,16 +67,16 @@ public class Blobolution3 extends JFrame {
             BufferedImage image = // Create an off-screen image
                     new BufferedImage((int)winX, (int)winY, BufferedImage.TYPE_INT_RGB);
             Graphics2D ig = image.createGraphics(); // Get its Graphics for drawing
-            ig.setFont(new Font("TimesRoman", Font.PLAIN, 24));
 
-            // Set the background to a gradient fill
-            ig.setPaint(new GradientPaint(0, 0, Color.black, (float)winX, (float)winY, Color.LIGHT_GRAY));
-            ig.fillRect(0, 0, (int)winX, (int)winY);
+            if (visible) {
+                // Set the background to a gradient fill
+                ig.setPaint(new GradientPaint(0, 0, Color.black, (float) winX, (float) winY, Color.LIGHT_GRAY));
+                ig.fillRect(0, 0, (int) winX, (int) winY);
 
-            // Set drawing attributes for the foreground
-            ig.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
-                    RenderingHints.VALUE_ANTIALIAS_ON);
-
+                // Set drawing attributes for the foreground
+                ig.setRenderingHint(RenderingHints.KEY_ANTIALIASING, // Anti-alias!
+                        RenderingHints.VALUE_ANTIALIAS_ON);
+            }
 
             // Draw all Blobs //
             for (Blob B : blobs) {
@@ -318,7 +320,14 @@ public class Blobolution3 extends JFrame {
             if (e.getWhen() - oldEventTime > seconds*1000) {
 
                 while (num < pop){
-                    blobs.add(new Blob(1, getWidth(), getHeight(), blobs));
+                    rand = new Random();
+                    Blob tB = blobs.get(rand.nextInt(num));
+                    Blob blob = new Blob(tB);
+                    blob.color = new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256));
+                    blob.health = blob.birthHealth;
+                    blob.age = 0;
+                    blob.numKids = 0;
+                    blobs.add(blob);
                     num = blobs.size();
                 }
 

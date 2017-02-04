@@ -219,26 +219,26 @@ public class BlobDataFrame extends JFrame{
             // If blob is alive, draw it and it's nearBlobs //
             // draw grid //
             g.setColor(Color.BLACK);
-            g.fillRect(boxX, boxY, boxL-5, boxL-5);
-            for (int i = 1; i<6; i++){
-                if (i==3) g.setColor(new Color(125, 125, 0));
+            g.fillRect(boxX, boxY, boxL - 5, boxL - 5);
+            for (int i = 1; i < 6; i++) {
+                if (i == 3) g.setColor(new Color(125, 125, 0));
                 else g.setColor(new Color(50, 50, 0));
-                g.drawLine(boxX + i*boxL/6, boxY, boxX + i*boxL/6, winH-5);
-                g.drawLine(boxX, boxY + i*boxL/6, winW-5, boxY + i*boxL/6);
+                g.drawLine(boxX + i * boxL / 6, boxY, boxX + i * boxL / 6, winH - 5);
+                g.drawLine(boxX, boxY + i * boxL / 6, winW - 5, boxY + i * boxL / 6);
             }
 
-            if (blob.health > 0) {
+            if (blob.health > 0 && blob.age > 0) {
                 // Draw nearBlobs //
                 for (Blob B : blob.nearBlobs) {
                     boolean far = false;
-                    int dx = (int) (blob.xTo(B) * 2*bRad/blob.size);
-                    int dy = (int) (blob.yTo(B) * 2*bRad/blob.size);
-                    if (Math.abs(dx)>(boxL/2-bRad)){
-                        dx = (int)Math.signum(dx)*boxL/2;
+                    int dx = (int) (blob.xTo(B) * 2 * bRad / blob.size);
+                    int dy = (int) (blob.yTo(B) * 2 * bRad / blob.size);
+                    if (Math.abs(dx) > (boxL / 2 - bRad)) {
+                        dx = (int) Math.signum(dx) * boxL / 2;
                         far = true;
                     }
-                    if (Math.abs(dy)>boxL/2){
-                        dy = (int)Math.signum(dy)*boxL/2;
+                    if (Math.abs(dy) > boxL / 2) {
+                        dy = (int) Math.signum(dy) * boxL / 2;
                         far = true;
                     }
                     g.setColor(B.color);
@@ -247,8 +247,7 @@ public class BlobDataFrame extends JFrame{
                                 boxX + boxL / 2 - bRad + dx,
                                 boxY + boxL / 2 - bRad + dy,
                                 2 * bRad, 2 * bRad);
-                    }
-                    else {
+                    } else {
                         g.fillOval(
                                 boxX + boxL / 2 - bRad + dx,
                                 boxY + boxL / 2 - bRad + dy,
@@ -260,8 +259,8 @@ public class BlobDataFrame extends JFrame{
                         g.setColor(new Color(0f, 1f, 0f, 1f));
                     else if (blob.nutritionRatio(B) == B.nutritionRatio(blob)) g.setColor(Color.WHITE);
                     g.drawOval(
-                            boxX + boxL / 2 - bRad*3/2 + dx,
-                            boxY + boxL / 2 - bRad*3/2 + dy,
+                            boxX + boxL / 2 - bRad * 3 / 2 + dx,
+                            boxY + boxL / 2 - bRad * 3 / 2 + dy,
                             3 * bRad, 3 * bRad);
                 }
                 // Draw Velocity Vector //
@@ -278,8 +277,7 @@ public class BlobDataFrame extends JFrame{
 
             }
             g.setColor(Color.YELLOW);
-            g.drawRect(boxX, boxY, boxL-5, boxL-5);
-
+            g.drawRect(boxX, boxY, boxL - 5, boxL - 5);
 
 
             // Draw the blob's brain //
@@ -290,36 +288,39 @@ public class BlobDataFrame extends JFrame{
             g.drawRect(5, 5, winW - boxL - 10, winH - 10);
             // INPUT NEURONS //
             // draw input values
-            for (int i = 0; i < blob.maxPerceivable*5; i++) {
-                switch(i%5) {
-                    case 0:
-                        inputLabels[i].setText("" + (int)(180/Math.PI*Math.atan2(
-                                blob.yTo(blob.nearBlobs[(i-1)/5]),
-                                blob.xTo(blob.nearBlobs[(i-1)/5])))
-                        );
-                        inputLabels[i].setForeground(Color.WHITE);
-                        break;
-                    case 1:
-                        inputLabels[i].setText("" + (int)Math.sqrt(
-                                Math.pow(blob.xTo(blob.nearBlobs[(i-1)/5]), 2) +
-                                Math.pow(blob.yTo(blob.nearBlobs[(i-1)/5]), 2) )
-                        );
-                        inputLabels[i].setForeground(Color.WHITE);
-                        break;
-                    case 2:
-                        inputLabels[i].setText("" + blob.nearBlobs[(i-2)/5].color.getRed());
-                        inputLabels[i].setForeground(Color.RED);
-                        break;
-                    case 3:
-                        inputLabels[i].setText("" + blob.nearBlobs[(i-3)/5].color.getGreen());
-                        inputLabels[i].setForeground(Color.GREEN);
-                        break;
-                    case 4:
-                        inputLabels[i].setText("" + blob.nearBlobs[(i-4)/5].color.getBlue());
-                        inputLabels[i].setForeground(Color.BLUE);
-                        break;
+            if (blob.age > 0){
+
+                for (int i = 0; i < blob.maxPerceivable * 5; i++) {
+                    switch (i % 5) {
+                        case 0:
+                            inputLabels[i].setText("" + (int) (180 / Math.PI * Math.atan2(
+                                    blob.yTo(blob.nearBlobs[(i - 1) / 5]),
+                                    blob.xTo(blob.nearBlobs[(i - 1) / 5])))
+                            );
+                            inputLabels[i].setForeground(Color.WHITE);
+                            break;
+                        case 1:
+                            inputLabels[i].setText("" + (int) Math.sqrt(
+                                    Math.pow(blob.xTo(blob.nearBlobs[(i - 1) / 5]), 2) +
+                                            Math.pow(blob.yTo(blob.nearBlobs[(i - 1) / 5]), 2))
+                            );
+                            inputLabels[i].setForeground(Color.WHITE);
+                            break;
+                        case 2:
+                            inputLabels[i].setText("" + blob.nearBlobs[(i - 2) / 5].color.getRed());
+                            inputLabels[i].setForeground(Color.RED);
+                            break;
+                        case 3:
+                            inputLabels[i].setText("" + blob.nearBlobs[(i - 3) / 5].color.getGreen());
+                            inputLabels[i].setForeground(Color.GREEN);
+                            break;
+                        case 4:
+                            inputLabels[i].setText("" + blob.nearBlobs[(i - 4) / 5].color.getBlue());
+                            inputLabels[i].setForeground(Color.BLUE);
+                            break;
+                    }
+                    inputLabels[i].setBounds(dxN / 2, (i + 1) * dyIn - bRad, dxN, 20);
                 }
-                inputLabels[i].setBounds(dxN/2, (i + 1) * dyIn - bRad, dxN, 20);
             }
             for (int i = blob.maxPerceivable*5; i < blob.brain.inputNeurons.length; i++) {
                 switch (i % 3) {
@@ -361,7 +362,6 @@ public class BlobDataFrame extends JFrame{
             outputLabels[0].setText("" + (int)(angle*100)/100.0);
 
             // DRAW CURRENT BLOB STATS
-            //g.setColor(new Color(30,30,25));
             g.setColor(Color.LIGHT_GRAY);
             g.fillRect(boxX, 5, boxL - 5, winH - boxL - 10);
             g.setColor(Color.WHITE);
@@ -369,13 +369,18 @@ public class BlobDataFrame extends JFrame{
             dataLabel.setForeground(Color.BLACK);
             dataLabel.setBounds(boxX+10, 10, boxL, winH-boxL);
             dataLabel.setText("<html>" +
-                    "<b>Health: </b>" + (int)(blob.health*1000)/1000.0 + "<br />" +
                     "<b>Age: </b>" + blob.age/100 + "<br />" +
+                    "<b>Health: </b>" + (int)(blob.health*1000)/1000.0 + "<br />" +
                     "<b>Generation: </b>" + blob.generation +  "<br />" +
-                    "<b>Perceivable Blobs: </b>" + blob.maxPerceivable +  "<br />" +
                     "<b>Red: </b><b style='color:red'>" + blob.color.getRed() + "</b><br />" +
                     "<b>Green: </b><b style='color:lime'>" + blob.color.getGreen() + "</b><br />" +
-                    "<b>Blue: </b><b style='color:blue'>" + blob.color.getBlue() + "</b></html>");
+                    "<b>Blue: </b><b style='color:blue'>" + blob.color.getBlue() + "</b><br />" +
+                    "<b>Perceivable Blobs: </b>" + blob.maxPerceivable +  "<br />" +
+                    "<b>Brain Variance: </b>" + blob.brainVar + "<br />" +
+                    "<b>Color Variance: </b>" + blob.colorVar + "<br />" +
+                    "<b>Offspring: </b>" + blob.numKids + "<br />" +
+                    "<b>Brain Type: </b>" + blob.brain.functionType + "<br />" +
+                    "</html>");
 
             // DRAW BUTTONS
             breedButton.setLocation(boxX + 10, winH-boxL-20-breedButton.getHeight());

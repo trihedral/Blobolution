@@ -13,6 +13,7 @@ public class NeuralNet {
     public int hiddenColumns;
     public ArrayList<Double> outputs;
     public int functionType;
+    public boolean feedback;
 
 
     // Creates a randomly weighted neural net //
@@ -26,6 +27,7 @@ public class NeuralNet {
         outputs = new ArrayList<Double>();
         this.hiddenRows = hiddenRows;
         this.hiddenColumns = hiddenColumns;
+        this.feedback = feedback;
 
         // Create randomly weighted input neurons //
         for (int i=0; i<inputNeurons.length; i++){

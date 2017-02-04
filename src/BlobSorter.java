@@ -132,7 +132,7 @@ public class BlobSorter extends JFrame{
                     Collections.sort(blobs, Blob.sortByPerceivableUp);
                     break;
                 case VARIANCE:
-                    Collections.sort(blobs, Blob.sortByVarianceUp);
+                    Collections.sort(blobs, Blob.sortByBrainVarUp);
                     break;
                 case OFFSPRING:
                     Collections.sort(blobs, Blob.sortByKidsUp);
@@ -169,7 +169,7 @@ public class BlobSorter extends JFrame{
                     Collections.sort(blobs, Blob.sortByPerceivable);
                     break;
                 case VARIANCE:
-                    Collections.sort(blobs, Blob.sortByVariance);
+                    Collections.sort(blobs, Blob.sortByBrainVar);
                     break;
                 case OFFSPRING:
                     Collections.sort(blobs, Blob.sortByKids);
@@ -191,7 +191,7 @@ public class BlobSorter extends JFrame{
             textAreas[BLUE].append(b.color.getBlue() + " \n");
             textAreas[MARKED].append(b.marked + " \n");
             textAreas[PERCEIVABLE].append(b.maxPerceivable + " \n");
-            textAreas[VARIANCE].append(b.variance + " \n");
+            textAreas[VARIANCE].append(b.brainVar + " \n");
             textAreas[OFFSPRING].append(b.numKids + " \n");
             textAreas[FUNCTION].append(b.brain.functionType + " \n");
         }

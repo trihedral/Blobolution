@@ -13,7 +13,7 @@ public class Blob{
     int maxAge;
     double maxSpeed, x, y, health, birthHealth;
     int age, generation;
-    double variance;
+    double brainVar, colorVar;
     private int timeInc;
     public double vx, vy, winX, winY;
     ArrayList<Blob> blobs;
@@ -44,7 +44,8 @@ public class Blob{
         this.winX = winX;
         this.winY = winY;
         this.blobs = blobs;
-        variance = .05;
+        brainVar = .05;
+        colorVar = .05;
         timeInc = 17;
         brain = new NeuralNet((maxPerceivable)*5 + 3, 5, 2, 1, 1, false);  // inputs, hidden rows, hidden columns, outputs, activation function type
         generation = 0;
@@ -59,7 +60,8 @@ public class Blob{
      */
     public Blob(Blob blob){
         rand = blob.rand;
-        variance = blob.variance;
+        brainVar = blob.brainVar;
+        colorVar = blob.colorVar;
         maxAge = blob.maxAge;
         numKids = blob.numKids;
         marked = blob.marked;
@@ -83,15 +85,15 @@ public class Blob{
     }
 
     public void varyChild(){
-        rand = new Random();
-        marked = false;
+        rand    = new Random();
+        marked  = false;
         grabbed = false;
         age = 0;
-        brain.vary(variance);
+        brain.vary(brainVar);
         color = new Color(
-                (int) vary(color.getRed(), variance, 0, 255),
-                (int) vary(color.getGreen(), variance, 0, 255),
-                (int) vary(color.getBlue(), variance, 0, 255));
+                (int) vary(color.getRed(), colorVar, 0, 255),
+                (int) vary(color.getGreen(), colorVar, 0, 255),
+                (int) vary(color.getBlue(), colorVar, 0, 255));
         generation ++;
 
 
@@ -131,7 +133,9 @@ public class Blob{
             p1 = p2+1; p2 = data.indexOf(' ', p1);
             generation = Integer.parseInt(data.substring(p1, p2));
             p1 = p2+1; p2 = data.indexOf(' ', p1);
-            variance = Double.parseDouble(data.substring(p1, p2));
+            brainVar = Double.parseDouble(data.substring(p1, p2));
+            p1 = p2+1; p2 = data.indexOf(' ', p1);
+            colorVar = Double.parseDouble(data.substring(p1, p2));
             p1 = p2+1; p2 = data.indexOf(' ', p1);
             winX = Double.parseDouble(data.substring(p1, p2));
             p1 = p2+1; p2 = data.indexOf(' ', p1);
@@ -339,7 +343,9 @@ public class Blob{
             fw.append(" ");
             fw.append(String.valueOf(generation));
             fw.append(" ");
-            fw.append(String.valueOf(variance));
+            fw.append(String.valueOf(brainVar));
+            fw.append(" ");
+            fw.append(String.valueOf(colorVar));
             fw.append(" ");
             fw.append(String.valueOf(winX));
             fw.append(" ");
@@ -452,10 +458,10 @@ public class Blob{
     public static Comparator<Blob> sortByPerceivable = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.maxPerceivable - b1.maxPerceivable;}
     };
-    public static Comparator<Blob> sortByVariance = new Comparator<Blob>() {
+    public static Comparator<Blob> sortByBrainVar = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) {
-            if (b2.variance < b1.variance) return -1;
-            if (b2.variance > b1.variance) return 1;
+            if (b2.brainVar < b1.brainVar) return -1;
+            if (b2.brainVar > b1.brainVar) return 1;
             return 0;
         }
     };
@@ -498,10 +504,10 @@ public class Blob{
     public static Comparator<Blob> sortByPerceivableUp = new Comparator<Blob>() {
         public int compare(Blob b2, Blob b1) { return b2.maxPerceivable - b1.maxPerceivable;}
     };
-    public static Comparator<Blob> sortByVarianceUp = new Comparator<Blob>() {
+    public static Comparator<Blob> sortByBrainVarUp = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) {
-            if (b1.variance < b2.variance) return -1;
-            if (b1.variance > b2.variance) return 1;
+            if (b1.brainVar < b2.brainVar) return -1;
+            if (b1.brainVar > b2.brainVar) return 1;
             return 0;
         }
     };

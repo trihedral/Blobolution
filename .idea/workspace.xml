@@ -7,15 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4c1c377-1adf-486d-b37a-4d12b7a0ce9a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/kyled.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/todo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Blobolution_3_jar/Blobolution 3.jar" afterPath="$PROJECT_DIR$/out/artifacts/Blobolution_3_jar/Blobolution 3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$1.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$10.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$11.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$12.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$13.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$14.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$15.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$16.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$17.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$18.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$19.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$2.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$20.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$21.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$22.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$3.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$4.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$5.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$6.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$7.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$8.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$9.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator$AddButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator$AddButtonListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator$ColorChangeListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator$ColorChangeListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator$PaintPanel.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator$PaintPanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator$SaveButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator$SaveButtonListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobCreator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobMouseMotionListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobMouseMotionListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BreedButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BreedButtonListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$CopyButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$CopyButtonListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$PaintPanel.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$PaintPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$SaveButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$SaveButtonListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$TimerListen.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$TimerListen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$WeightLine.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$WeightLine.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobSorter.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobSorter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$BlobMouseListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$BlobMouseListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$BlobMouseMotionListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$BlobMouseMotionListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$ClearItemListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$ClearItemListener.class" />
@@ -29,11 +58,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$TimerListen.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$TimerListen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$VisibleRadioListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$VisibleRadioListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/NeuralNet.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/NeuralNet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blob.java" afterPath="$PROJECT_DIR$/src/Blob.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BlobCreator.java" afterPath="$PROJECT_DIR$/src/BlobCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BlobDataFrame.java" afterPath="$PROJECT_DIR$/src/BlobDataFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BlobSorter.java" afterPath="$PROJECT_DIR$/src/BlobSorter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blobolution3.java" afterPath="$PROJECT_DIR$/src/Blobolution3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NeuralNet.java" afterPath="$PROJECT_DIR$/src/NeuralNet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/todo.txt" afterPath="$PROJECT_DIR$/src/todo.txt" />
     </list>
     <ignored path="Blobolution 3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,15 +87,24 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+            <file leaf-file-name="BlobCreator.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/BlobCreator.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="1353">
+                    <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
             <file leaf-file-name="BlobSorter.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/BlobSorter.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="5313">
-                    <caret line="265" column="33" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="33" />
+                  <state relative-caret-position="6006">
+                    <caret line="193" column="49" selection-start-line="193" selection-start-column="49" selection-end-line="193" selection-end-column="49" />
                     <folding>
                       <element signature="n#!!doc" expanded="false" />
                       <element signature="imports" expanded="false" />
-                      <element signature="method#updateTextAreas#0;class#BlobSorter#0" expanded="false" />
                     </folding>
                   </state>
                 </provider>
@@ -71,8 +113,8 @@
             <file leaf-file-name="todo.txt" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/todo.txt">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="627">
-                    <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+                  <state relative-caret-position="693">
+                    <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
                     <folding />
                   </state>
                 </provider>
@@ -92,17 +134,13 @@
       <file leaf-file-name="Blobolution3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blobolution3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="378" column="62" selection-start-line="378" selection-start-column="62" selection-end-line="378" selection-end-column="62" />
+            <state relative-caret-position="5214">
+              <caret line="427" column="38" selection-start-line="427" selection-start-column="38" selection-end-line="427" selection-end-column="38" />
               <folding>
                 <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-                <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-                <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
                 <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
                 <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
                 <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-                <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-                <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
                 <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
                 <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
                 <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -134,14 +172,14 @@
       <file leaf-file-name="Blob.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+            <state relative-caret-position="2079">
+              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#live#0;class#Blob#0" expanded="false" />
                 <element signature="method#look#0;class#Blob#0" expanded="false" />
                 <element signature="method#mitosis#0;class#Blob#0" expanded="false" />
                 <element signature="method#vary#0;class#Blob#0" expanded="false" />
-                <element signature="method#save#0;class#Blob#0" expanded="false" />
                 <element signature="method#xTo#0;class#Blob#0" expanded="false" />
                 <element signature="method#yTo#0;class#Blob#0" expanded="false" />
               </folding>
@@ -152,20 +190,16 @@
       <file leaf-file-name="BlobDataFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BlobDataFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1597">
-              <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+            <state relative-caret-position="391">
+              <caret line="287" column="58" selection-start-line="287" selection-start-column="58" selection-end-line="287" selection-end-column="58" />
               <folding>
                 <element signature="docComment;class#BlobDataFrame#0" expanded="false" />
+                <element signature="method#BlobDataFrame#0;class#BlobDataFrame#0" expanded="false" />
                 <element signature="class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
                 <element signature="method#windowClosing#0;class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
                 <element signature="class#BlobComponentAdapter#0;class#BlobDataFrame#0" expanded="false" />
                 <element signature="method#componentResized#0;class#BlobComponentAdapter#0;class#BlobDataFrame#0" expanded="false" />
                 <element signature="e#4498#4517#0" expanded="false" />
-                <element signature="class#PaintPanel#0;class#BlobDataFrame#0" expanded="false" />
-                <element signature="method#paintComponent#0;class#PaintPanel#0;class#BlobDataFrame#0" expanded="false" />
-                <element signature="e#8443#8493#0" expanded="false" />
-                <element signature="e#11540#11559#0" expanded="false" />
-                <element signature="e#14700#14726#0" expanded="false" />
                 <element signature="method#determineLocation#0;class#BlobDataFrame#0" expanded="false" />
                 <element signature="class#BreedButtonListener#0;class#BlobDataFrame#0" expanded="false" />
                 <element signature="class#CopyButtonListener#0;class#BlobDataFrame#0" expanded="false" />
@@ -184,21 +218,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlobCreator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BlobCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="276" column="54" selection-start-line="276" selection-start-column="54" selection-end-line="276" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NeuralNet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NeuralNet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+            <state relative-caret-position="924">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -234,20 +258,20 @@
         <option value="$PROJECT_DIR$/src/BlobMouseListener.java" />
         <option value="$PROJECT_DIR$/src/names" />
         <option value="$PROJECT_DIR$/src/SortBlobByAge.java" />
-        <option value="$PROJECT_DIR$/src/BlobSorter.java" />
         <option value="$PROJECT_DIR$/src/Neuron.java" />
-        <option value="$PROJECT_DIR$/src/BlobDataFrame.java" />
-        <option value="$PROJECT_DIR$/src/Blobolution3.java" />
-        <option value="$PROJECT_DIR$/src/NeuralNet.java" />
-        <option value="$PROJECT_DIR$/src/BlobCreator.java" />
         <option value="$PROJECT_DIR$/src/Blob.java" />
+        <option value="$PROJECT_DIR$/src/BlobSorter.java" />
+        <option value="$PROJECT_DIR$/src/BlobCreator.java" />
+        <option value="$PROJECT_DIR$/src/NeuralNet.java" />
+        <option value="$PROJECT_DIR$/src/Blobolution3.java" />
         <option value="$PROJECT_DIR$/src/todo.txt" />
+        <option value="$PROJECT_DIR$/src/BlobDataFrame.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
-    <option name="width" value="1586" />
+    <option name="width" value="1522" />
     <option name="height" value="1931" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -289,7 +313,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/JCP Bot" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -297,16 +321,7 @@
       <recent name="K:\Documents\Programming\Java\Blobolution 3\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
-    <configuration default="false" name="Blobolution 3.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Blobolution_3_jar/Blobolution 3.jar" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <envs />
-      <RunnerSettings RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="Basic" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JAR Application.Blobolution 3.jar">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -566,15 +581,23 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="Blobolution 3.jar" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Blobolution_3_jar/Blobolution 3.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs />
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Blobolution 3:jar" />
+        </option>
+      </method>
+    </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JAR Application.Blobolution 3.jar" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JAR Application.Blobolution 3.jar" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -595,26 +618,33 @@
       <option name="presentableId" value="Default" />
       <updated>1446938997653</updated>
     </task>
+    <task id="LOCAL-00001" summary="Bug fixes">
+      <created>1486071058536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1486071058536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="1586" height="1931" extended-state="0" />
+    <frame x="-11" y="0" width="1522" height="1931" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32734647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19698726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30185398" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19640788" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -627,6 +657,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -666,6 +697,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bug fixes" />
+    <MESSAGE value="Immigration&#10;- Immigrants are now based on a random blob&#10;- Colors are randomized&#10;- Some variables set to zero (e.g. age)&#10;&#10;BlobCreator&#10;- Seperate field added for color variance&#10;&#10;BlobDataFrame&#10;- Now works when paused&#10;- Shows all blob details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Immigration&#10;- Immigrants are now based on a random blob&#10;- Colors are randomized&#10;- Some variables set to zero (e.g. age)&#10;&#10;BlobCreator&#10;- Seperate field added for color variance&#10;&#10;BlobDataFrame&#10;- Now works when paused&#10;- Shows all blob details" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="20" />
@@ -683,13 +719,9 @@
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -736,11 +768,11 @@
         <state relative-caret-position="0">
           <caret line="171" column="17" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#live#0;class#Blob#0" expanded="false" />
             <element signature="method#look#0;class#Blob#0" expanded="false" />
             <element signature="method#mitosis#0;class#Blob#0" expanded="false" />
             <element signature="method#vary#0;class#Blob#0" expanded="false" />
-            <element signature="method#save#0;class#Blob#0" expanded="false" />
             <element signature="method#xTo#0;class#Blob#0" expanded="false" />
             <element signature="method#yTo#0;class#Blob#0" expanded="false" />
           </folding>
@@ -768,13 +800,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -821,11 +849,11 @@
         <state relative-caret-position="0">
           <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#live#0;class#Blob#0" expanded="false" />
             <element signature="method#look#0;class#Blob#0" expanded="false" />
             <element signature="method#mitosis#0;class#Blob#0" expanded="false" />
             <element signature="method#vary#0;class#Blob#0" expanded="false" />
-            <element signature="method#save#0;class#Blob#0" expanded="false" />
             <element signature="method#xTo#0;class#Blob#0" expanded="false" />
             <element signature="method#yTo#0;class#Blob#0" expanded="false" />
           </folding>
@@ -845,13 +873,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -906,13 +930,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -946,13 +966,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -986,13 +1002,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1026,13 +1038,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1066,13 +1074,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1106,13 +1110,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1153,13 +1153,9 @@
           <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1200,13 +1196,9 @@
           <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1254,13 +1246,9 @@
           <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1301,13 +1289,9 @@
           <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1354,11 +1338,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#live#0;class#Blob#0" expanded="false" />
             <element signature="method#look#0;class#Blob#0" expanded="false" />
             <element signature="method#mitosis#0;class#Blob#0" expanded="false" />
             <element signature="method#vary#0;class#Blob#0" expanded="false" />
-            <element signature="method#save#0;class#Blob#0" expanded="false" />
             <element signature="method#xTo#0;class#Blob#0" expanded="false" />
             <element signature="method#yTo#0;class#Blob#0" expanded="false" />
           </folding>
@@ -1378,13 +1362,9 @@
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1425,13 +1405,9 @@
           <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1465,13 +1441,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1505,13 +1477,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1545,13 +1513,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1584,11 +1548,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#live#0;class#Blob#0" expanded="false" />
             <element signature="method#look#0;class#Blob#0" expanded="false" />
             <element signature="method#mitosis#0;class#Blob#0" expanded="false" />
             <element signature="method#vary#0;class#Blob#0" expanded="false" />
-            <element signature="method#save#0;class#Blob#0" expanded="false" />
             <element signature="method#xTo#0;class#Blob#0" expanded="false" />
             <element signature="method#yTo#0;class#Blob#0" expanded="false" />
           </folding>
@@ -1600,11 +1564,11 @@
         <state relative-caret-position="0">
           <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#live#0;class#Blob#0" expanded="false" />
             <element signature="method#look#0;class#Blob#0" expanded="false" />
             <element signature="method#mitosis#0;class#Blob#0" expanded="false" />
             <element signature="method#vary#0;class#Blob#0" expanded="false" />
-            <element signature="method#save#0;class#Blob#0" expanded="false" />
             <element signature="method#xTo#0;class#Blob#0" expanded="false" />
             <element signature="method#yTo#0;class#Blob#0" expanded="false" />
           </folding>
@@ -1615,18 +1579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BlobSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5313">
-          <caret line="265" column="33" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="method#updateTextAreas#0;class#BlobSorter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1642,33 +1594,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NeuralNet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+        <state relative-caret-position="924">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BlobCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="276" column="54" selection-start-line="276" selection-start-column="54" selection-end-line="276" selection-end-column="54" />
+        <state relative-caret-position="1353">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#live#0;class#Blob#0" expanded="false" />
+            <element signature="method#look#0;class#Blob#0" expanded="false" />
+            <element signature="method#mitosis#0;class#Blob#0" expanded="false" />
+            <element signature="method#vary#0;class#Blob#0" expanded="false" />
+            <element signature="method#xTo#0;class#Blob#0" expanded="false" />
+            <element signature="method#yTo#0;class#Blob#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blobolution3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="378" column="62" selection-start-line="378" selection-start-column="62" selection-end-line="378" selection-end-column="62" />
+        <state relative-caret-position="5214">
+          <caret line="427" column="38" selection-start-line="427" selection-start-column="38" selection-end-line="427" selection-end-column="38" />
           <folding>
             <element signature="method#Blobolution3#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#buildMenuBar#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#PlayRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#VisibleRadioListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#actionPerformed#0;class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
             <element signature="class#LoadBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1696,46 +1660,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/todo.txt">
+    <entry file="file://$PROJECT_DIR$/src/BlobSorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="6006">
+          <caret line="193" column="49" selection-start-line="193" selection-start-column="49" selection-end-line="193" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blob.java">
+    <entry file="file://$PROJECT_DIR$/src/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding>
-            <element signature="method#live#0;class#Blob#0" expanded="false" />
-            <element signature="method#look#0;class#Blob#0" expanded="false" />
-            <element signature="method#mitosis#0;class#Blob#0" expanded="false" />
-            <element signature="method#vary#0;class#Blob#0" expanded="false" />
-            <element signature="method#save#0;class#Blob#0" expanded="false" />
-            <element signature="method#xTo#0;class#Blob#0" expanded="false" />
-            <element signature="method#yTo#0;class#Blob#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="693">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BlobDataFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1597">
-          <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+        <state relative-caret-position="391">
+          <caret line="287" column="58" selection-start-line="287" selection-start-column="58" selection-end-line="287" selection-end-column="58" />
           <folding>
             <element signature="docComment;class#BlobDataFrame#0" expanded="false" />
+            <element signature="method#BlobDataFrame#0;class#BlobDataFrame#0" expanded="false" />
             <element signature="class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
             <element signature="method#windowClosing#0;class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
             <element signature="class#BlobComponentAdapter#0;class#BlobDataFrame#0" expanded="false" />
             <element signature="method#componentResized#0;class#BlobComponentAdapter#0;class#BlobDataFrame#0" expanded="false" />
             <element signature="e#4498#4517#0" expanded="false" />
-            <element signature="class#PaintPanel#0;class#BlobDataFrame#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#PaintPanel#0;class#BlobDataFrame#0" expanded="false" />
-            <element signature="e#8443#8493#0" expanded="false" />
-            <element signature="e#11540#11559#0" expanded="false" />
-            <element signature="e#14700#14726#0" expanded="false" />
             <element signature="method#determineLocation#0;class#BlobDataFrame#0" expanded="false" />
             <element signature="class#BreedButtonListener#0;class#BlobDataFrame#0" expanded="false" />
             <element signature="class#CopyButtonListener#0;class#BlobDataFrame#0" expanded="false" />
