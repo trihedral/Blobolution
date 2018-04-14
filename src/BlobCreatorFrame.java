@@ -2,38 +2,31 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.geom.Arc2D;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * Created by kyled_000 on 11/25/2015.
- */
-public class BlobCreator extends JFrame{
-    ArrayList<Blob> blobs;
-    Blob oldBlob;
-    PaintPanel gPanel = new PaintPanel();
-    JSlider redSlider, greenSlider, blueSlider;
-    Random rand = new Random();
-    JPanel colorPanel, aNNPanel, buttonPanel, previewPanel;
-    JLabel rLabel = new JLabel(), gLabel = new JLabel(), bLabel = new JLabel();
-    JTextArea perceiveArea, hiddenRowsArea, hiddenColumnsArea, brainVarArea,
-            colorVarArea, numArea, ageArea, sizeArea, speedArea, healthArea;
-    JRadioButton expRadio, oneRadio, zeroRadio;
-    JCheckBox randBox, markBox;
-    Blobolution3 mainFrame;
-    JButton addButton;
+public class BlobCreatorFrame extends JFrame{
+    private ArrayList<Blob> blobs;
+    private PaintPanel gPanel = new PaintPanel();
+    private JSlider redSlider, greenSlider, blueSlider;
+    private Random rand = new Random();
+    private JPanel colorPanel, aNNPanel, buttonPanel;
+    private JLabel rLabel = new JLabel(), gLabel = new JLabel(), bLabel = new JLabel();
+    private JTextArea perceiveArea, hiddenRowsArea, hiddenColumnsArea, brainVarArea,
+            colorVarArea, ageArea, sizeArea, speedArea, healthArea;
+    JTextArea numArea;
+    private JRadioButton expRadio, oneRadio, zeroRadio;
+    private JCheckBox markBox;
+    JCheckBox randBox;
+    private Blobolution3 mainFrame;
 
-    public BlobCreator(Blob blob, Blobolution3 mainFrame) {
+    public BlobCreatorFrame(Blob blob, Blobolution3 mainFrame) {
         super("Blob Creator");
         this.mainFrame = mainFrame;
         this.blobs = blob.blobs;
-        oldBlob = blob;
         setup();
 
         if (blob.maxAge > 0) {
@@ -63,7 +56,7 @@ public class BlobCreator extends JFrame{
         blueSlider.setValue(blob.color.getBlue());
     }
 
-    void setup(){
+    private void setup(){
         setResizable(true);
         setVisible(true);
         setLayout(new GridLayout(1, 3));
@@ -86,7 +79,7 @@ public class BlobCreator extends JFrame{
 
     }
 
-    void buildColorPanel(){
+    private void buildColorPanel(){
         JPanel  redPanel, greenPanel, bluePanel;
         JLabel redLabel, greenLabel, blueLabel;
         colorPanel = new JPanel();
@@ -102,9 +95,9 @@ public class BlobCreator extends JFrame{
         greenSlider.addChangeListener(new ColorChangeListener());
         blueSlider  = new JSlider(JSlider.VERTICAL, 0, 255, rand.nextInt(255));
         blueSlider.addChangeListener(new ColorChangeListener());
-        redLabel = new JLabel("R");
+        redLabel   = new JLabel("R");
         greenLabel = new JLabel("G");
-        blueLabel = new JLabel("B");
+        blueLabel  = new JLabel("B");
         redLabel.setForeground(Color.RED);
         greenLabel.setForeground(new Color(0,180,0));
         blueLabel.setForeground(Color.BLUE);
@@ -120,7 +113,7 @@ public class BlobCreator extends JFrame{
 
     }
 
-    void buildANNPanel(){
+    private void buildANNPanel(){
         aNNPanel = new JPanel();
         aNNPanel.setLayout(new GridLayout(3,1));
 
@@ -208,7 +201,7 @@ public class BlobCreator extends JFrame{
         aNNPanel.add(activationPanel);
     }
 
-    void buildButtonPanel(){
+    private void buildButtonPanel(){
         buttonPanel = new JPanel();
         JPanel bPanel = new JPanel();
         bPanel.setLayout(new GridLayout(4, 1));
@@ -217,11 +210,11 @@ public class BlobCreator extends JFrame{
         numArea = new JTextArea("1", 1, 3);
         qPanel.add(numArea);
         bPanel.add(qPanel);
-        randBox = new JCheckBox("Random brains & colors");
+        randBox = new JCheckBox("Random ANNs & colors");
         bPanel.add(randBox);
-        markBox = new JCheckBox("Mark added blobs");
+        markBox = new JCheckBox("Mark new blobs");
         bPanel.add(markBox);
-        addButton = new JButton("Add");
+        JButton addButton = new JButton("Add");
         addButton.addActionListener(new AddButtonListener());
         bPanel.add(addButton);
 
@@ -230,18 +223,18 @@ public class BlobCreator extends JFrame{
         buttonPanel.add(bPanel);
     }
 
-    class PaintPanel extends JPanel {
+    private class PaintPanel extends JPanel {
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
             setBorder(BorderFactory.createTitledBorder("Preview"));
             setLayout(null);
-            int lWidth = 30;
+            int lWidth = 60;
             rLabel.setForeground(Color.RED);
             gLabel.setForeground(new Color(0,180,0));
             bLabel.setForeground(Color.BLUE);
             add(rLabel); add(gLabel); add(bLabel);
             g.setColor(new Color(redSlider.getValue(), greenSlider.getValue(), blueSlider.getValue()));
-            g.fillOval(this.getWidth() / 2 - 10, this.getHeight() / 4, 20, 20);
+            g.fillOval(this.getWidth() / 2 - 10, this.getHeight() / 3, 50, 50);
 
             //rLabel.setBounds(0,0,20,20);
             rLabel.setBounds(this.getWidth() / 2 - lWidth * 3/2, this.getHeight() / 2,
@@ -278,7 +271,7 @@ public class BlobCreator extends JFrame{
                 }
                 blob.maxSpeed = Double.parseDouble(speedArea.getText());
                 blob.health = Double.parseDouble(healthArea.getText());
-                blob.size = Double.parseDouble(sizeArea.getText());
+                blob.size = Integer.parseInt(sizeArea.getText());
                 blob.birthHealth = blob.health;
 
                 int fType = 0;
@@ -308,8 +301,10 @@ public class BlobCreator extends JFrame{
         }
     }
 
+    /*
     private class SaveButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
         }
     }
+    */
 }

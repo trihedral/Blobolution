@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.geom.Arc2D;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -9,20 +8,21 @@ public class Blob{
 
     int numKids;
     int maxPerceivable;
-    double size;
+    int size;
     int maxAge;
     double maxSpeed, x, y, health, birthHealth;
     int age, generation;
     double brainVar, colorVar;
     private int timeInc;
-    public double vx, vy, winX, winY;
+    private double winX, winY;
+    double vx, vy;
     ArrayList<Blob> blobs;
     Blob[] nearBlobs;
-    Random rand;
+    private Random rand;
     Color color;
-    public NeuralNet brain;
-    public boolean marked;
-    public boolean grabbed;
+    NeuralNet brain;
+    boolean marked;
+    boolean grabbed;
 
     /**
      * Initializes a Blob with default/random values
@@ -36,7 +36,7 @@ public class Blob{
         grabbed = false;
         maxPerceivable = maxPerc;
         maxSpeed = .05;
-        size = 20;
+        size = 30;
         health = 10;
         age = 0;
         birthHealth = health;
@@ -46,7 +46,7 @@ public class Blob{
         this.blobs = blobs;
         brainVar = .05;
         colorVar = .05;
-        timeInc = 17;
+        timeInc = 25;
         brain = new NeuralNet((maxPerceivable)*5 + 3, 5, 2, 1, 1, false);  // inputs, hidden rows, hidden columns, outputs, activation function type
         generation = 0;
         color = new Color(
@@ -84,11 +84,12 @@ public class Blob{
         y = blob.y;
     }
 
-    public void varyChild(){
+    private void varyChild(){
         rand    = new Random();
         marked  = false;
         grabbed = false;
         age = 0;
+        numKids = 0;
         brain.vary(brainVar);
         color = new Color(
                 (int) vary(color.getRed(), colorVar, 0, 255),
@@ -96,16 +97,16 @@ public class Blob{
                 (int) vary(color.getBlue(), colorVar, 0, 255));
         generation ++;
 
-
         //size = vary(size, variance, 5, 30);
         //maxSpeed = vary(maxSpeed, variance, .01, .5);
     }
 
     public Blob(File file){
-        FileReader fr = null;
+        FileReader fr;
         try {
             fr = new FileReader(file);
             char[] buff = new char[(int)file.length()];
+            //noinspection ResultOfMethodCallIgnored
             fr.read(buff, 0, (int)file.length());
             fr.close();
             String data = new String(buff);
@@ -182,8 +183,7 @@ public class Blob{
             }
 
             nearBlobs = new Blob[maxPerceivable];
-            marked = true;
-            timeInc = 17;
+            timeInc = 25;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -191,7 +191,7 @@ public class Blob{
         }
     }
 
-    public ArrayList<Blob> live(ArrayList <Blob> b){
+    ArrayList<Blob> live(ArrayList<Blob> b){
         // remove self from list if health <= 0 //
         if (health<=0 && age > 1) {
             //System.out.println("Removing blob due to death: Age " + age + ", Gen " + generation);
@@ -237,19 +237,19 @@ public class Blob{
         // Send all perceptual data to neural net //
         for (int i=0; i<maxPerceivable; i++){
             data.add((this.distTo(nearBlobs[i]))/winX);
-            data.add( Math.atan2(yTo(nearBlobs[i]), xTo(nearBlobs[i]))/(2*Math.PI) );
+            data.add( Math.atan2(yTo(nearBlobs[i]), xTo(nearBlobs[i])) ); // send radians
             data.add(nearBlobs[i].color.getRed()/255.0);
             data.add(nearBlobs[i].color.getGreen()/255.0);
             data.add(nearBlobs[i].color.getBlue()/255.0);
         }
-        data.add(color.getRed()/255.0);
-        data.add(color.getGreen()/255.0);
-        data.add(color.getBlue()/255.0);
+        data.add(color.getRed()   / 255.0);
+        data.add(color.getGreen() / 255.0);
+        data.add(color.getBlue()  / 255.0);
         //data.add(brain.getOutput(0));
 
         // get neural net output //
         brain.think(data);
-        double angle =  brain.getOutput(0)*2*Math.PI;
+        double angle =  brain.getOutput(0);  // interpret output as radians
         vx = Math.cos(angle);
         vy = Math.sin(angle);
 
@@ -303,12 +303,14 @@ public class Blob{
         numKids++;
     }
 
+    /*
     private int totalColor(){
         return color.getRed()+color.getGreen()+color.getBlue();
     }
+    */
 
     /** Returns a random number between  num+ratio*255 and num-ratio*255 **/
-    double vary(double num, double ratio, double min, double max){
+    private double vary(double num, double ratio, double min, double max){
         double R = 1-2*rand.nextDouble();  // random number from -1 to 1
         double newNum = num + R*ratio*max;
         if (newNum > max) newNum = max;
@@ -316,7 +318,7 @@ public class Blob{
         return newNum;
     }
 
-    public void save(File file) {
+    void save(File file) {
         try {
             FileWriter fw = new FileWriter(file);
             fw.write("");
@@ -400,121 +402,119 @@ public class Blob{
         return Math.sqrt(Math.pow(yTo(b),2)+Math.pow(xTo(b),2));
     }
 
-    public double xTo(Blob b){
+    double xTo(Blob b){
         double dx = b.x-this.x;
-        if (Math.abs(dx) > winX/2) dx = winX-dx;
+        if (Math.abs(dx) > winX/2) dx = dx-winX;
         return dx;
     }
 
-    public double yTo(Blob b){
+    double yTo(Blob b){
         double dy = b.y-this.y;
-        if (Math.abs(dy) > winY/2) dy = winY-dy;
+        if (Math.abs(dy) > winY/2) dy = dy-winY;
         return dy;
     }
 
-    public double nutritionRatio(Blob B) {
-        double colorTaste =
-                (
-                  color.getRed()  / 255.0 * B.color.getGreen()/ 255.0
-                + color.getGreen()/ 255.0 * B.color.getBlue() / 255.0             // R eats G, G eats B, B eats R
-                + color.getBlue() / 255.0 * B.color.getRed()  / 255.0
-                ) / 3;
+    double nutritionRatio(Blob B) {
         //double sizeTaste = 1;
         //if (size < B.size) sizeTaste = size/B.size;
-        return (colorTaste);// * sizeTaste);
+        return ((
+          color.getRed()  / 255.0 * B.color.getGreen()/ 255.0
+        + color.getGreen()/ 255.0 * B.color.getBlue() / 255.0             // R eats G, G eats B, B eats R
+        + color.getBlue() / 255.0 * B.color.getRed()  / 255.0
+        ) / 3);// * sizeTaste);
     }
 
     ///////////// SORTERS ///////////////
 
-    public static Comparator<Blob> sortByAge = new Comparator<Blob>() {
+    static Comparator<Blob> sortByAge = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.age - b1.age;}
     };
-    public static Comparator<Blob> sortByHealth = new Comparator<Blob>() {
+    static Comparator<Blob> sortByHealth = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) {
             if (b2.health < b1.health) return -1;
             if (b2.health > b1.health) return 1;
             return 0;
         }
     };
-    public static Comparator<Blob> sortByGeneration = new Comparator<Blob>() {
+    static Comparator<Blob> sortByGeneration = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.generation - b1.generation;}
     };
-    public static Comparator<Blob> sortByRed = new Comparator<Blob>() {
+    static Comparator<Blob> sortByRed = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.color.getRed() - b1.color.getRed();}
     };
-    public static Comparator<Blob> sortByGreen = new Comparator<Blob>() {
+    static Comparator<Blob> sortByGreen = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.color.getGreen() - b1.color.getGreen();}
     };
-    public static Comparator<Blob> sortByBlue = new Comparator<Blob>() {
+    static Comparator<Blob> sortByBlue = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.color.getBlue() - b1.color.getBlue();}
     };
-    public static Comparator<Blob> sortByMarked = new Comparator<Blob>() {
+    static Comparator<Blob> sortByMarked = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) {
             if (b1.marked && !b2.marked) return -1;
             if (!b1.marked && b2.marked) return 1;
             return 0;
         }
     };
-    public static Comparator<Blob> sortByPerceivable = new Comparator<Blob>() {
+    static Comparator<Blob> sortByPerceivable = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.maxPerceivable - b1.maxPerceivable;}
     };
-    public static Comparator<Blob> sortByBrainVar = new Comparator<Blob>() {
+    static Comparator<Blob> sortByBrainVar = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) {
             if (b2.brainVar < b1.brainVar) return -1;
             if (b2.brainVar > b1.brainVar) return 1;
             return 0;
         }
     };
-    public static Comparator<Blob> sortByKids = new Comparator<Blob>() {
+    static Comparator<Blob> sortByKids = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.numKids - b1.numKids;}
     };
-    public static Comparator<Blob> sortByFunction = new Comparator<Blob>() {
+    static Comparator<Blob> sortByFunction = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b2.brain.functionType - b1.brain.functionType;}
     };
 
-    public static Comparator<Blob> sortByAgeUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByAgeUp = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b1.age - b2.age;}
     };
-    public static Comparator<Blob> sortByHealthUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByHealthUp = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) {
             if (b1.health < b2.health) return -1;
             if (b1.health > b2.health) return 1;
             return 0;
         }
     };
-    public static Comparator<Blob> sortByGenerationUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByGenerationUp = new Comparator<Blob>() {
         public int compare(Blob b2, Blob b1) { return b2.generation - b1.generation;}
     };
-    public static Comparator<Blob> sortByRedUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByRedUp = new Comparator<Blob>() {
         public int compare(Blob b2, Blob b1) { return b2.color.getRed() - b1.color.getRed();}
     };
-    public static Comparator<Blob> sortByGreenUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByGreenUp = new Comparator<Blob>() {
         public int compare(Blob b2, Blob b1) { return b2.color.getGreen() - b1.color.getGreen();}
     };
-    public static Comparator<Blob> sortByBlueUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByBlueUp = new Comparator<Blob>() {
         public int compare(Blob b2, Blob b1) { return b2.color.getBlue() - b1.color.getBlue();}
     };
-    public static Comparator<Blob> sortByMarkedUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByMarkedUp = new Comparator<Blob>() {
         public int compare(Blob b2, Blob b1) {
             if (b1.marked && !b2.marked) return 1;
             if (!b1.marked && b2.marked) return -1;
             return 0;
         }
     };
-    public static Comparator<Blob> sortByPerceivableUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByPerceivableUp = new Comparator<Blob>() {
         public int compare(Blob b2, Blob b1) { return b2.maxPerceivable - b1.maxPerceivable;}
     };
-    public static Comparator<Blob> sortByBrainVarUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByBrainVarUp = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) {
             if (b1.brainVar < b2.brainVar) return -1;
             if (b1.brainVar > b2.brainVar) return 1;
             return 0;
         }
     };
-    public static Comparator<Blob> sortByKidsUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByKidsUp = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b1.numKids - b2.numKids;}
     };
-    public static Comparator<Blob> sortByFunctionUp = new Comparator<Blob>() {
+    static Comparator<Blob> sortByFunctionUp = new Comparator<Blob>() {
         public int compare(Blob b1, Blob b2) { return b1.brain.functionType - b2.brain.functionType;}
     };
 

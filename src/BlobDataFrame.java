@@ -1,5 +1,3 @@
-import javafx.scene.shape.Line;
-
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
@@ -10,39 +8,36 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-/**
- * Created by kyled_000 on 11/12/2015.
- */
 public class BlobDataFrame extends JFrame{
 
     private PaintPanel gPanel = new PaintPanel();
-    private int timeInc = 17;   // Milliseconds between timer events
-    Timer timer = new Timer(timeInc, new TimerListen());
-    private int winW, winH, dyIn, dyHid, dyOut, dxN;
+    private int winW;
+    private int winH;
+    private int dyIn;
+    private int dyOut;
+    private int dxN;
     private int bRad;
-    Blob blob;
-    BlobDataFrame thisFrame;
-    ArrayList<BlobDataFrame> dataFrames;
-    JLabel[] inputLabels;
-    JLabel[] outputLabels;
-    JLabel dataLabel;
-    JButton breedButton;
-    JButton saveButton;
-    JButton copyButton;
-    JLabel weightLabel;
-    double maxWeight;
-    int boxL, boxY, boxX, nSize;
-    int mouseX = 0, mouseY = 0;
-    boolean markState;
-    ArrayList<WeightLine> lines = new ArrayList<WeightLine>();
-    ArrayList<Point> ovals = new ArrayList<Point>();
-    Locale locale  = new Locale("en", "UK");
-    String pattern = "###.###";
-    DecimalFormat decimalFormat;
-    Blobolution3 mainFrame;
+    private Blob blob;
+    private BlobDataFrame thisFrame;
+    private ArrayList<BlobDataFrame> dataFrames;
+    private JLabel[] inputLabels;
+    private JLabel[] outputLabels;
+    private JLabel dataLabel;
+    private JButton breedButton;
+    private JButton saveButton;
+    private JButton copyButton;
+    private JLabel weightLabel;
+    private double maxWeight;
+    private int boxL, boxY, boxX, nSize;
+    private int mouseX = 0, mouseY = 0;
+    private boolean markState;
+    private ArrayList<WeightLine> lines = new ArrayList<WeightLine>();
+    private ArrayList<Point> ovals = new ArrayList<Point>();
+    private DecimalFormat decimalFormat;
+    private Blobolution3 mainFrame;
 
-    public BlobDataFrame(Blob blob, ArrayList<BlobDataFrame> dataFrames, Blobolution3 mainFrame){
-        super("Blob Data");
+    BlobDataFrame(Blob blob, ArrayList<BlobDataFrame> dataFrames, Blobolution3 mainFrame){
+        super("Individual Data");
         thisFrame = this;
         this.mainFrame = mainFrame;
         this.blob = blob;
@@ -60,11 +55,15 @@ public class BlobDataFrame extends JFrame{
         determineLocation(wW, wH);
         gPanel.addMouseMotionListener(new BlobMouseMotionListener());
 
+        Locale locale = new Locale("en", "UK");
         decimalFormat = (DecimalFormat)
                 NumberFormat.getNumberInstance(locale);
+        String pattern = "###.###";
         decimalFormat.applyPattern(pattern);
 
         add(gPanel);
+        int timeInc = 17;
+        Timer timer = new Timer(timeInc, new TimerListen());
         timer.start();
 
         breedButton = new JButton("Breed");
@@ -101,7 +100,7 @@ public class BlobDataFrame extends JFrame{
             gPanel.add(outputLabels[i]);
             outputLabels[i].setForeground(Color.WHITE);
         }
-        bRad = 8;
+        bRad = 16;
 
         addWindowListener(new BlobWindowAdapter());
         addComponentListener(new BlobComponentAdapter());
@@ -119,16 +118,16 @@ public class BlobDataFrame extends JFrame{
         public void componentResized(ComponentEvent e) {
             winH = gPanel.getHeight();
             winW = gPanel.getWidth();
-            boxL = 200;
+            boxL = 275;
             boxY = winH - boxL;
             boxX = winW - boxL;
-            nSize = 10;  // diameter of neurons
+            nSize = 20;  // diameter of neurons
             dyIn = winH / (blob.brain.inputNeurons.length + 1);
-            dyHid = winH / (blob.brain.hiddenRows + 1);
+            int dyHid = winH / (blob.brain.hiddenRows + 1);
             dyOut = winH / (blob.brain.outputNeurons.length + 1);
             dxN = boxX / (2 + blob.brain.hiddenColumns + 1);
 
-            ovals.clear();;
+            ovals.clear();
             lines.clear();
 
             // INPUT NEURONS //
@@ -136,7 +135,7 @@ public class BlobDataFrame extends JFrame{
             for (int i = 0; i < blob.brain.inputNeurons.length; i++) {
                 ovals.add(new Point(dxN, (i + 1) * dyIn));
                 lines.add(new WeightLine(
-                        dxN + nSize/2, (i + 1) * dyIn + nSize/2 - 15,
+                        dxN + nSize/2, (i + 1) * dyIn + nSize/2 - (int)(1.5*nSize),
                         dxN + nSize/2, (i + 1) * dyIn + nSize/2 ,
                         blob.brain.inputNeurons[i].weights[ blob.brain.inputNeurons[i].weights.length-1 ]
                         ));
@@ -167,7 +166,7 @@ public class BlobDataFrame extends JFrame{
                     }
                     // add dummy weight //
                     lines.add(new WeightLine(
-                            (c + 2) * dxN + nSize/2, (r + 1) * dyHid + nSize/2 - 15,
+                            (c + 2) * dxN + nSize/2, (r + 1) * dyHid + nSize/2 - (int)(1.5*nSize),
                             (c + 2) * dxN + nSize/2, (r + 1) * dyHid + nSize/2,
                             blob.brain.hiddenNeurons[r][c].weights[ blob.brain.hiddenNeurons[r][c].weights.length-1 ]
                             ));
@@ -211,7 +210,7 @@ public class BlobDataFrame extends JFrame{
         }
     }
 
-    class PaintPanel extends JPanel {
+    private class PaintPanel extends JPanel {
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
             setBackground(Color.DARK_GRAY);
@@ -282,7 +281,7 @@ public class BlobDataFrame extends JFrame{
 
             // Draw the blob's brain //
 
-            g.setColor(Color.BLACK);
+            g.setColor(new Color(0.1f, 0.1f, 0.1f));
             g.fillRect(5, 5, winW - boxL - 10, winH - 10);
             g.setColor(Color.LIGHT_GRAY);
             g.drawRect(5, 5, winW - boxL - 10, winH - 10);
@@ -293,16 +292,18 @@ public class BlobDataFrame extends JFrame{
                 for (int i = 0; i < blob.maxPerceivable * 5; i++) {
                     switch (i % 5) {
                         case 0:
-                            inputLabels[i].setText("" + (int) (180 / Math.PI * Math.atan2(
+                            inputLabels[i].setText("" + ((int) Math.atan2(
                                     blob.yTo(blob.nearBlobs[(i - 1) / 5]),
-                                    blob.xTo(blob.nearBlobs[(i - 1) / 5])))
+                                    blob.xTo(blob.nearBlobs[(i - 1) / 5]))
+                                    *100) / 100.0
                             );
                             inputLabels[i].setForeground(Color.WHITE);
                             break;
                         case 1:
-                            inputLabels[i].setText("" + (int) Math.sqrt(
+                            inputLabels[i].setText("" + ((int) Math.sqrt(
                                     Math.pow(blob.xTo(blob.nearBlobs[(i - 1) / 5]), 2) +
-                                            Math.pow(blob.yTo(blob.nearBlobs[(i - 1) / 5]), 2))
+                                    Math.pow(blob.yTo(blob.nearBlobs[(i - 1) / 5]), 2))
+                                    * 100) / 100
                             );
                             inputLabels[i].setForeground(Color.WHITE);
                             break;
@@ -358,7 +359,7 @@ public class BlobDataFrame extends JFrame{
             }
 
 
-            double angle = Math.atan2(blob.vy,blob.vx)*360;
+            double angle = Math.atan2(blob.vy,blob.vx);
             outputLabels[0].setText("" + (int)(angle*100)/100.0);
 
             // DRAW CURRENT BLOB STATS
@@ -424,14 +425,16 @@ public class BlobDataFrame extends JFrame{
 
     private class CopyButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            new BlobCreator(blob, mainFrame);
+            new BlobCreatorFrame(blob, mainFrame);
         }
     }
 
     private class SaveButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setPreferredSize(new Dimension(1000, 700));
             fileChooser.setDialogTitle("Save Blob");
+            fileChooser.setSelectedFile(new File("*.blob"));
             fileChooser.setApproveButtonText("Save");
             FileNameExtensionFilter filter = new FileNameExtensionFilter("Blob Files", "blob");
             fileChooser.setFileFilter(filter);
@@ -507,20 +510,22 @@ public class BlobDataFrame extends JFrame{
             length = Math.sqrt(Math.pow(xf-x0,2)+Math.pow(yf-y0,2));
         }
 
-        public void draw(Graphics g, double maxWeight){
+        void draw(Graphics g, double maxWeight){
+            Graphics2D g2 = (Graphics2D) g;
             float alpha = (float)(Math.signum(weight)*Math.pow(weight/maxWeight, 2));
             if (highlight) {
-                if (alpha > 0) g.setColor(new Color(0, 1.0f, .6f));
-                else g.setColor(new Color(1.0f, 0, .6f));
+                if (alpha > 0) g2.setColor(new Color(0, 1.0f, .6f));
+                else g2.setColor(new Color(1.0f, 0, .6f));
             }
             else {
-                if (alpha > 0) g.setColor(new Color(0, 1.0f, 0, alpha));
-                else g.setColor(new Color(1.0f, 0, 0, Math.abs(alpha)));
+                if (alpha > 0) g2.setColor(new Color(0, 1.0f, 0, alpha));
+                else g2.setColor(new Color(1.0f, 0, 0, Math.abs(alpha)));
             }
-            g.drawLine(x0, y0, xf, yf);
+            g2.setStroke(new BasicStroke(3));
+            g2.drawLine(x0, y0, xf, yf);
         }
 
-        public boolean isInBoundBox(int x, int y){
+        boolean isInBoundBox(int x, int y){
             if ( xf == x0) {
                 if (yf > y0) {
                     if ( y > yf || y < y0 ) return false;

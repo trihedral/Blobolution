@@ -1,23 +1,15 @@
-Immigration toggle
--Base Immigrant on random blob
--Randomize Immigrant color
-Randomize immigrant brain
-Change average weight with activation function?
+Change weights per activation function?
+Neural output threshold
 Enable ANN feedback (memory)
 Minimize on-top windows when focus is lost
-Degree vs Radian confusion?
 Age unit confusion?
+purge certain % option
+Toggle migration
+Toggle entropy cancelation
 
 
 
-BlobCreator
+
+BlobCreatorFrame
 -------------
--Separate field for color variance
-Input own color or not to ANN
-
-
-
-BlobDataFrame
----------------
--Error when paused
--Show all data from Details
+Input own color or not to ANN - Blob 250

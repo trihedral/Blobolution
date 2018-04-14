@@ -1,23 +1,17 @@
 import java.util.ArrayList;
-import java.util.Random;
 
-/**
- * Created by kyled_000 on 11/7/2015.
- */
-public class NeuralNet {
+class NeuralNet {
 
-    public Neuron inputNeurons[];
-    public Neuron outputNeurons[];
-    public Neuron hiddenNeurons[][];
-    public int hiddenRows;
-    public int hiddenColumns;
-    public ArrayList<Double> outputs;
-    public int functionType;
-    public boolean feedback;
-
+    Neuron inputNeurons[];
+    Neuron outputNeurons[];
+    Neuron hiddenNeurons[][];
+    int hiddenRows;
+    int hiddenColumns;
+    private ArrayList<Double> outputs;
+    int functionType;
 
     // Creates a randomly weighted neural net //
-    public NeuralNet(int numInputs, int hiddenRows, int hiddenColumns, int numOutputs, int functionType, boolean feedback){
+    NeuralNet(int numInputs, int hiddenRows, int hiddenColumns, int numOutputs, int functionType, boolean feedback){
         int nI = numInputs;
         if (feedback) nI++;
         this.functionType = functionType;
@@ -27,7 +21,6 @@ public class NeuralNet {
         outputs = new ArrayList<Double>();
         this.hiddenRows = hiddenRows;
         this.hiddenColumns = hiddenColumns;
-        this.feedback = feedback;
 
         // Create randomly weighted input neurons //
         for (int i=0; i<inputNeurons.length; i++){
@@ -51,7 +44,7 @@ public class NeuralNet {
     }
 
     // Copy constructor //
-    public NeuralNet(NeuralNet oldNN){
+    NeuralNet(NeuralNet oldNN){
         functionType = oldNN.functionType;
         inputNeurons = new Neuron[oldNN.inputNeurons.length];
         outputNeurons = new Neuron[oldNN.outputNeurons.length];
@@ -77,7 +70,7 @@ public class NeuralNet {
         }
     }
 
-    public void vary(double ratio){
+    void vary(double ratio){
         for (Neuron N : inputNeurons){
             N.vary(ratio);
         }
@@ -91,7 +84,7 @@ public class NeuralNet {
         }
     }
 
-    public void think(ArrayList<Double> in){
+    void think(ArrayList<Double> in){
         outputs.clear();
         ArrayList<Double> inSignals = new ArrayList<Double>();
         ArrayList<Double> signals = new ArrayList<Double>();
@@ -113,12 +106,9 @@ public class NeuralNet {
 
     }
 
-    public double getOutput (int i){
+    double getOutput(int i){
         return outputs.get(i);
     }
-
-
-
 
 }
 

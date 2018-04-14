@@ -3,44 +3,41 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
 
 public class Blobolution3 extends JFrame {
     private int timeInc = 25;   // Milliseconds between timer events. Ideal: 17
-    Timer timer;
+    private Timer timer;
     private double winX, winY;
     private double oldEventTime;
-    JMenuBar menuBar;
-    JMenu fileMenu, simMenu;
-    JMenuItem newBlobItem, loadBlobItem, loadSimItem, saveSimItem;
-    JRadioButton playRadioButton, visibleRadioButton;
-    ArrayList<Blob> blobs = new ArrayList<Blob>();
-    ArrayList<BlobDataFrame> dataFrames = new ArrayList<BlobDataFrame>();
+    private JMenuBar menuBar;
+    private JMenuItem newBlobItem;
+    //private JMenuItem loadSimItem;
+    //private JMenuItem saveSimItem;
+    private JRadioButton playRadioButton;
+    private ArrayList<Blob> blobs = new ArrayList<Blob>();
+    private ArrayList<BlobDataFrame> dataFrames = new ArrayList<BlobDataFrame>();
     Integer pop = 0;
-    boolean paused = true;
-    boolean visible = true;
-    Random rand;
-    Blobolution3 frame;
-    ArrayList<Double> dataList = new ArrayList<Double>();
-    BlobSorter blobSorter;
+    private boolean paused = true;
+    private boolean visible = true;
+    private Blobolution3 frame;
+    private ArrayList<Double> dataList = new ArrayList<Double>();
+    private BlobSorterFrame blobSorterFrame;
     int totalFrames = 0;
-    BlobCreator blobCreator;
+    private BlobCreatorFrame blobCreatorFrame;
 
-    public Blobolution3() {
-        super("Blobolution");
+    Blobolution3() {
+        super("ANN Environment");
+        setUIFont(new javax.swing.plaf.FontUIResource("",Font.PLAIN,24));
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        setAlwaysOnTop(false);
         winX = screenSize.getWidth();
         winY = screenSize.getHeight();
-        setSize((int) winX / 2, (int) winY / 2);
+        setSize((int) winX / 3, (int) winY / 4);
         setLayout(new BorderLayout());
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setLocation( (int)(screenSize.getWidth()  - getSize().getWidth()/2), 0 );
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setResizable(true);
         PaintPanel gPanel = new PaintPanel();
@@ -61,7 +58,7 @@ public class Blobolution3 extends JFrame {
         quickTest();
     }
 
-    class PaintPanel extends JPanel {
+    private class PaintPanel extends JPanel {
         protected void paintComponent(Graphics g1) {
             Graphics2D g = (Graphics2D) g1;
             BufferedImage image = // Create an off-screen image
@@ -70,7 +67,8 @@ public class Blobolution3 extends JFrame {
 
             if (visible) {
                 // Set the background to a gradient fill
-                ig.setPaint(new GradientPaint(0, 0, Color.black, (float) winX, (float) winY, Color.LIGHT_GRAY));
+                ig.setPaint(new GradientPaint(0, 0, Color.black,
+                        (float) winX, (float) winY, new Color(87, 106, 115)));
                 ig.fillRect(0, 0, (int) winX, (int) winY);
 
                 // Set drawing attributes for the foreground
@@ -84,13 +82,13 @@ public class Blobolution3 extends JFrame {
                 ig.fillOval(
                         (int) (B.x - B.size / 2),
                         (int) (B.y - B.size / 2),
-                        (int) B.size, (int) B.size);
+                        B.size, B.size);
                 if (B.marked) {
                     ig.setColor(Color.WHITE);
                     ig.drawOval(
                             (int) (B.x - B.size),
                             (int) (B.y - B.size),
-                            (int) B.size * 2, (int) B.size * 2);
+                            B.size * 2, B.size * 2);
                     ig.drawLine(
                             (int) (B.x - B.size), (int) (B.y),
                             (int) (B.x + B.size), (int) (B.y));
@@ -108,29 +106,29 @@ public class Blobolution3 extends JFrame {
 
     private void buildMenuBar(){
         menuBar = new JMenuBar();
-        fileMenu = new JMenu("File");
-        simMenu = new JMenu("Simulation");
+        JMenu fileMenu = new JMenu("File");
+        JMenu simMenu = new JMenu("Simulation");
         menuBar.add(fileMenu);
         menuBar.add(simMenu);
         newBlobItem = new JMenuItem("New Blob(s)...");
         newBlobItem.addActionListener(new NewBlobItemListener());
         fileMenu.add(newBlobItem);
-        loadBlobItem = new JMenuItem("Load Blob...");
+        JMenuItem loadBlobItem = new JMenuItem("Load Blob...");
         loadBlobItem.addActionListener(new LoadBlobItemListener());
         fileMenu.add(loadBlobItem);
-        loadSimItem = new JMenuItem("Load Sim...");
+        /*loadSimItem = new JMenuItem("Load Sim...");
         loadSimItem.addActionListener(new LoadSimItemListener());
         fileMenu.add(loadSimItem);
         saveSimItem = new JMenuItem("Save Sim...");
         saveSimItem.addActionListener(new SaveSimItemListener());
-        fileMenu.add(saveSimItem);
+        fileMenu.add(saveSimItem);*/
 
         playRadioButton = new JRadioButton("Run");
         playRadioButton.setSelected(false);
         playRadioButton.addActionListener(new PlayRadioListener());
         simMenu.add(playRadioButton);
 
-        visibleRadioButton = new JRadioButton("Real-time");
+        JRadioButton visibleRadioButton = new JRadioButton("Real-time");
         visibleRadioButton.setSelected(true);
         visibleRadioButton.addActionListener(new VisibleRadioListener());
         simMenu.add(visibleRadioButton);
@@ -179,25 +177,28 @@ public class Blobolution3 extends JFrame {
                 timer.stop();
                 timer = new Timer(0, new TimerListen());
                 if (!paused) timer.start();
+                //setAlwaysOnTop(true);
             }
             else {
                 visible = true;
                 timer.stop();
                 timer = new Timer(timeInc, new TimerListen());
                 if (!paused) timer.start();
+                //setAlwaysOnTop(false);
             }
         }
     }
 
     private class NewBlobItemListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            blobCreator = new BlobCreator(new Blob(1, getWidth(), getHeight(), blobs), frame);
+            blobCreatorFrame = new BlobCreatorFrame(new Blob(1, getWidth(), getHeight(), blobs), frame);
         }
     }
 
     private class LoadBlobItemListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setPreferredSize(new Dimension(1000, 700));
             fileChooser.setDialogTitle("Load Blob");
             FileNameExtensionFilter filter = new FileNameExtensionFilter("Blob Files", "blob");
             fileChooser.setFileFilter(filter);
@@ -208,12 +209,14 @@ public class Blobolution3 extends JFrame {
                 b.health = b.birthHealth;
                 b.age = 0;
                 b.numKids = 0;
+                b.marked = true;
                 blobs.add(b);
                 repaint();
             }
         }
     }
 
+    /*
     private class LoadSimItemListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             JFileChooser fileChooser = new JFileChooser();
@@ -275,6 +278,7 @@ public class Blobolution3 extends JFrame {
             }
         }
     }
+    */
 
     private class ClearItemListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
@@ -292,11 +296,11 @@ public class Blobolution3 extends JFrame {
      */
     private class DetailsItemListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            if (blobSorter == null || !blobSorter.isVisible())
-                blobSorter = new BlobSorter(blobs, dataFrames, dataList, frame);
+            if (blobSorterFrame == null || !blobSorterFrame.isVisible())
+                blobSorterFrame = new BlobSorterFrame(blobs, dataFrames, frame);
             else
-                blobSorter.setState(java.awt.Frame.NORMAL);
-            blobSorter.toFront();
+                blobSorterFrame.setState(java.awt.Frame.NORMAL);
+            blobSorterFrame.toFront();
         }
     }
 
@@ -320,10 +324,11 @@ public class Blobolution3 extends JFrame {
             if (e.getWhen() - oldEventTime > seconds*1000) {
 
                 while (num < pop){
-                    rand = new Random();
+                    Random rand = new Random();
                     Blob tB = blobs.get(rand.nextInt(num));
                     Blob blob = new Blob(tB);
                     blob.color = new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256));
+                    //blob.brain.vary(.99);
                     blob.health = blob.birthHealth;
                     blob.age = 0;
                     blob.numKids = 0;
@@ -414,20 +419,31 @@ public class Blobolution3 extends JFrame {
         }
     }
 
+    private static void setUIFont(javax.swing.plaf.FontUIResource f){
+        java.util.Enumeration keys = UIManager.getDefaults().keys();
+        while (keys.hasMoreElements()) {
+            Object key = keys.nextElement();
+            Object value = UIManager.get (key);
+            if (value instanceof javax.swing.plaf.FontUIResource)
+                UIManager.put (key, f);
+        }
+
+    }
+
     public static void main(String[] args) {
         new Blobolution3();
     }
 
-    public void quickTest(){
+    private void quickTest(){
         newBlobItem.doClick();
         try {
             Thread.sleep(100);
-        }catch (Exception e){
+        }catch (Exception ignored){
 
         }
-        blobCreator.numArea.setText("300");
-        blobCreator.randBox.doClick();
-        //blobCreator.addButton.doClick();
+        blobCreatorFrame.numArea.setText("300");
+        blobCreatorFrame.randBox.doClick();
+        //blobCreatorFrame.addButton.doClick();
 
         //playRadioButton.doClick();
     }

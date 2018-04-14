@@ -1,6 +1,3 @@
-/**
- * Created by kyled_000 on 12/5/2015.
- */
 import javax.swing.*;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultCaret;
@@ -12,38 +9,33 @@ import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class BlobSorter extends JFrame{
-    ArrayList<Blob> blobs;
-    ArrayList<BlobDataFrame> blobDataFrames;
-    ArrayList<Double> data;
-    JFrame frame = this;
-    Blobolution3 mainFrame;
-    Timer timer;
-    int timeInc = 100;
-    static final int AGE = 0, HEALTH = 1, GENERATION = 2, RED = 3, GREEN = 4, BLUE = 5,
+class BlobSorterFrame extends JFrame{
+    private ArrayList<Blob> blobs;
+    private ArrayList<BlobDataFrame> blobDataFrames;
+    private JFrame frame = this;
+    private Blobolution3 mainFrame;
+    private static final int AGE = 0, HEALTH = 1, GENERATION = 2, RED = 3, GREEN = 4, BLUE = 5,
             MARKED = 6, PERCEIVABLE = 7,  VARIANCE = 8, OFFSPRING = 9, FUNCTION = 10;
-    String[] strings = {"Age", "Health", "Gen", "Red", "Green", "Blue",
+    private String[] strings = {"Age", "Health", "Gen", "Red", "Green", "Blue",
             "Marked", "Perceives", "Variance", "Offspring", "Brain Type"};
-    int sortIndex = 0;
-    boolean ascend = false;
-    int columns = strings.length;
-    JButton[] buttons = new JButton[columns];
-    JScrollPane scrollPane;
-    JTextArea[] textAreas = new JTextArea[columns];
-    JPanel[] panels = new JPanel[columns];
-    JLabel fpsLabel, popLabel, totHealthLabel;
-    JMenuBar menuBar;
-    int prevFrames = 0;
-    double oldEventTime;
+    private int sortIndex = 0;
+    private boolean ascend = false;
+    private int columns = strings.length;
+    private JButton[] buttons = new JButton[columns];
+    private JTextArea[] textAreas = new JTextArea[columns];
+    private JPanel[] panels = new JPanel[columns];
+    private JLabel fpsLabel, popLabel, totHealthLabel;
+    private JMenuBar menuBar;
+    private int prevFrames = 0;
+    private double oldEventTime;
 
 
-    public BlobSorter(ArrayList<Blob> blobs, ArrayList<BlobDataFrame> blobDataFrames,
-                      ArrayList<Double> data, Blobolution3 mainFrame) {
+    BlobSorterFrame(ArrayList<Blob> blobs, ArrayList<BlobDataFrame> blobDataFrames,
+                    Blobolution3 mainFrame) {
         super("All Blob Details");
         this.mainFrame = mainFrame;
         this.blobDataFrames = blobDataFrames;
         this.blobs = blobs;
-        this.data = data;
         setResizable(true);
         setVisible(true);
         setLayout(new GridLayout(1, columns));
@@ -52,8 +44,10 @@ public class BlobSorter extends JFrame{
         setJMenuBar(menuBar);
         initComponents();
         pack();
+        setSize(1500, (int)(mainFrame.getHeight()*.75));
 
-        timer = new Timer(timeInc, new TimerListen());
+        int timeInc = 100;
+        Timer timer = new Timer(timeInc, new TimerListen());
         timer.start();
     }
 
@@ -73,7 +67,7 @@ public class BlobSorter extends JFrame{
             textAreas[i].addMouseListener(new TextMouseListener());
 
             // Init buttons //
-            buttons[i] = new JButton(strings[i]);
+            buttons[i] = new JButton("  " + strings[i] + "  ");
             buttons[i].addActionListener(new buttonListener());
             buttons[i].setBorder(null);
 
@@ -86,8 +80,8 @@ public class BlobSorter extends JFrame{
             // Add panels to main frame //
             textAreaPanel.add(panels[i]);
         }
-        buttons[0].setText(buttons[0].getText() + " v"); // mark initial sort button
-        scrollPane = new JScrollPane(textAreaPanel);
+        buttons[0].setText("  " + strings[0] + " v"); // mark initial sort button
+        JScrollPane scrollPane = new JScrollPane(textAreaPanel);
         scrollPane.setPreferredSize(new Dimension(600,600));
         scrollPane.getVerticalScrollBar().setUnitIncrement(16);
 
@@ -197,7 +191,6 @@ public class BlobSorter extends JFrame{
         }
     }
 
-
     private class TimerListen implements ActionListener {
         //////EVERY TIME ONE timeInc GOES BY...///////
         public void actionPerformed(ActionEvent e) {
@@ -225,7 +218,7 @@ public class BlobSorter extends JFrame{
             // Determined index of pressed button //
             int newSortIndex = -1;
             for (int i = 0; i < columns; i++){
-                if (strings[i].equals(((JButton) e.getSource()).getText())) newSortIndex = i;
+                if (("  " + strings[i] + "  ").equals(((JButton) e.getSource()).getText())) newSortIndex = i;
             }
             if (newSortIndex == -1) {
                 ascend = !ascend;
@@ -237,12 +230,12 @@ public class BlobSorter extends JFrame{
 
             // Update all text //
             for (int i = 0; i < columns; i++) {
-                buttons[i].setText(strings[i]);
+                buttons[i].setText("  " + strings[i] + "  ");
             }
             if (ascend)
-                buttons[sortIndex].setText(buttons[sortIndex].getText() + " ^");
+                buttons[sortIndex].setText("  " + strings[sortIndex] + " ^");
             else
-                buttons[sortIndex].setText(buttons[sortIndex].getText() + " v");
+                buttons[sortIndex].setText("  " + strings[sortIndex] + " v");
             updateTextAreas();
         }
     }
