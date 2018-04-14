@@ -6,10 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4c1c377-1adf-486d-b37a-4d12b7a0ce9a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Proposal.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Proposal2.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled.png" afterPath="" />
+    <list default="true" id="f4c1c377-1adf-486d-b37a-4d12b7a0ce9a" name="Default" comment="Adds final paper draft">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paper.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paperLaTeX/ANN.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paperLaTeX/diet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paperLaTeX/neurons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paperLaTeX/population.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paperLaTeX/ANNs.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Blobolution_3_jar/Blobolution 3.jar" afterPath="$PROJECT_DIR$/out/artifacts/Blobolution_3_jar/Blobolution 3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobComponentAdapter.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobComponentAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobMouseMotionListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobMouseMotionListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobWindowAdapter.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobWindowAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BreedButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BreedButtonListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$CopyButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$CopyButtonListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$PaintPanel.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$PaintPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$SaveButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$SaveButtonListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$TimerListen.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$TimerListen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$WeightLine.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$WeightLine.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/NeuralNet.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/NeuralNet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Blobolution 3.iws" />
@@ -35,8 +50,8 @@
       <file leaf-file-name="Blobolution3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Blobolution3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -57,8 +72,8 @@
                 <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
                 <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
                 <element signature="e#16548#16587#0" expanded="false" />
-                <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-                <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+                <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+                <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -173,19 +188,20 @@
         <option value="$PROJECT_DIR$/src/BlobSorter.java" />
         <option value="$PROJECT_DIR$/src/BlobCreator.java" />
         <option value="$PROJECT_DIR$/src/todo.txt" />
-        <option value="$PROJECT_DIR$/src/Blobolution3.java" />
         <option value="$PROJECT_DIR$/src/Blob.java" />
         <option value="$PROJECT_DIR$/src/NeuralNet.java" />
         <option value="$PROJECT_DIR$/src/BlobDataFrame.java" />
         <option value="$PROJECT_DIR$/src/BlobCreatorFrame.java" />
         <option value="$PROJECT_DIR$/src/BlobSorterFrame.java" />
+        <option value="$PROJECT_DIR$/src/Blobolution3.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="width" value="1522" />
-    <option name="height" value="1931" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="3026" />
+    <option name="height" value="1946" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -198,7 +214,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -211,7 +227,45 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blobolution 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blobolution 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blobolution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blobolution 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blobolution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paperLaTeX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
@@ -229,6 +283,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/kyled/IdeaProjects/Blobolution/src/BlobDataFrame.java" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -553,12 +608,19 @@
       <option name="project" value="LOCAL" />
       <updated>1523705948481</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adds final paper draft">
+      <created>1523706605404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523706605404</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="1522" height="1931" extended-state="0" />
-    <editor active="true" />
+    <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -567,11 +629,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14310545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1412981" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -630,7 +692,8 @@
     <MESSAGE value="Immigration&#10;- Immigrants are now based on a random blob&#10;- Colors are randomized&#10;- Some variables set to zero (e.g. age)&#10;&#10;BlobCreator&#10;- Seperate field added for color variance&#10;&#10;BlobDataFrame&#10;- Now works when paused&#10;- Shows all blob details" />
     <MESSAGE value="GUI Tweaks" />
     <MESSAGE value="GUI Tweaks, scope changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI Tweaks, scope changes" />
+    <MESSAGE value="Adds final paper draft" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds final paper draft" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -643,13 +706,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Neuron.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NeuralNet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -715,8 +771,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -779,8 +835,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -830,8 +886,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -860,8 +916,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -890,8 +946,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -920,8 +976,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -950,8 +1006,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -980,8 +1036,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1017,8 +1073,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1054,8 +1110,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1098,8 +1154,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1135,8 +1191,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1199,8 +1255,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1236,8 +1292,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1266,8 +1322,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1296,8 +1352,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1326,8 +1382,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1454,10 +1510,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/paperLaTeX/ANN.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blobolution3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#NewBlobItemListener#0;class#Blobolution3#0" expanded="false" />
@@ -1478,8 +1539,8 @@
             <element signature="docComment;method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="method#hideCursor#0;class#Blobolution3#0" expanded="false" />
             <element signature="e#16548#16587#0" expanded="false" />
-            <marker date="1523704942721" expanded="false" signature="9086:11001" ph="{...}" />
-            <marker date="1523704942721" expanded="false" signature="9139:10995" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9086:11001" ph="{...}" />
+            <marker date="1523706824571" expanded="false" signature="9139:10995" ph="{...}" />
           </folding>
         </state>
       </provider>
