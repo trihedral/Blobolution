@@ -1,3 +1,8 @@
+/**
+ * MIT License (see LICENSE.md)
+ * Copyright (c) 2018 Kyle D. Rocha-Brownell
+ **/
+
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
