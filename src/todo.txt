@@ -2,10 +2,7 @@ Change weights per activation function?
 Neural output threshold
 Enable ANN feedback (memory)
 Minimize on-top windows when focus is lost
-Age unit confusion?
 purge certain % option
-Toggle migration
-Toggle entropy cancelation
 
 
 

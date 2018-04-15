@@ -35,7 +35,7 @@ public class BlobCreatorFrame extends JFrame{
         setup();
 
         if (blob.maxAge > 0) {
-            ageArea.setText(blob.maxAge + "");
+            ageArea.setText(blob.maxAge/100 + "");
         }
         else ageArea.setText("-");
         sizeArea.setText(blob.size+"");
@@ -272,7 +272,7 @@ public class BlobCreatorFrame extends JFrame{
                     blob.maxAge = 0; // immortal
                 }
                 else {
-                    blob.maxAge = Integer.parseInt(ageArea.getText());
+                    blob.maxAge = Integer.parseInt(ageArea.getText())*100;
                 }
                 blob.maxSpeed = Double.parseDouble(speedArea.getText());
                 blob.health = Double.parseDouble(healthArea.getText());

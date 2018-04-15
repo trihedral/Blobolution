@@ -1,7 +1,7 @@
 /**
-* MIT License (see LICENSE.md)
-* Copyright (c) 2018 Kyle D. Rocha-Brownell
-**/
+ * MIT License (see LICENSE.md)
+ * Copyright (c) 2018 Kyle D. Rocha-Brownell
+ **/
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -9,7 +9,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Blobolution3 extends JFrame {
     private int timeInc = 25;   // Milliseconds between timer events. Ideal: 17
@@ -27,7 +26,6 @@ public class Blobolution3 extends JFrame {
     private boolean paused = true;
     private boolean visible = true;
     private Blobolution3 frame;
-    private ArrayList<Double> dataList = new ArrayList<Double>();
     private BlobSorterFrame blobSorterFrame;
     int totalFrames = 0;
     private BlobCreatorFrame blobCreatorFrame;
@@ -53,10 +51,6 @@ public class Blobolution3 extends JFrame {
         setJMenuBar(menuBar);
         setVisible(true);
         frame = this;
-
-        dataList.add(0.0);
-        dataList.add(0.0);
-        dataList.add(0.0);
 
         timer = new Timer(timeInc, new TimerListen());
 
@@ -328,19 +322,11 @@ public class Blobolution3 extends JFrame {
             int seconds = 5;
             if (e.getWhen() - oldEventTime > seconds*1000) {
 
-                while (num < pop){
-                    Random rand = new Random();
-                    Blob tB = blobs.get(rand.nextInt(num));
-                    Blob blob = new Blob(tB);
-                    blob.color = new Color(rand.nextInt(256), rand.nextInt(256), rand.nextInt(256));
-                    //blob.brain.vary(.99);
-                    blob.health = blob.birthHealth;
-                    blob.age = 0;
-                    blob.numKids = 0;
-                    blobs.add(blob);
-                    num = blobs.size();
-                }
+                // maintain initial population (counteract rounding errors) //
+                int missing = pop - num;
+                for (Blob B : blobs) B.health += B.birthHealth*missing/num;
 
+                // draw when not running in real time //
                 if (!visible) repaint();
                 oldEventTime = e.getWhen();
             }
