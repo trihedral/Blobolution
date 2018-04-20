@@ -101,6 +101,9 @@ public class Blob{
                 (int) vary(color.getGreen(), colorVar, 0, 255),
                 (int) vary(color.getBlue(), colorVar, 0, 255));
         generation ++;
+        double randAng = rand.nextDouble() * 2*Math.PI;
+        x += 1.1*size * Math.cos(randAng);
+        y += 1.1*size * Math.sin(randAng);
 
         //size = vary(size, variance, 5, 30);
         //maxSpeed = vary(maxSpeed, variance, .01, .5);
