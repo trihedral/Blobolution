@@ -328,22 +328,24 @@ public class BlobDataFrame extends JFrame{
                     inputLabels[i].setBounds(dxN / 2, (i + 1) * dyIn - bRad, dxN, 20);
                 }
             }
-            for (int i = blob.maxPerceivable*5; i < blob.brain.inputNeurons.length; i++) {
-                switch (i % 3) {
-                    case 0:
-                        inputLabels[i].setText("" + blob.color.getRed());
-                        inputLabels[i].setForeground(Color.RED);
-                        break;
-                    case 1:
-                        inputLabels[i].setText("" + blob.color.getGreen());
-                        inputLabels[i].setForeground(Color.GREEN);
-                        break;
-                    case 2:
-                        inputLabels[i].setText("" + blob.color.getBlue());
-                        inputLabels[i].setForeground(Color.BLUE);
-                        break;
+            if (blob.knowSelf) {
+                for (int i = blob.maxPerceivable * 5; i < blob.brain.inputNeurons.length; i++) {
+                    switch (i % 3) {
+                        case 0:
+                            inputLabels[i].setText("" + blob.color.getRed());
+                            inputLabels[i].setForeground(Color.RED);
+                            break;
+                        case 1:
+                            inputLabels[i].setText("" + blob.color.getGreen());
+                            inputLabels[i].setForeground(Color.GREEN);
+                            break;
+                        case 2:
+                            inputLabels[i].setText("" + blob.color.getBlue());
+                            inputLabels[i].setForeground(Color.BLUE);
+                            break;
+                    }
+                    inputLabels[i].setBounds(dxN / 2, (i + 1) * dyIn - bRad, dxN, 20);
                 }
-                inputLabels[i].setBounds(dxN/2, (i + 1) * dyIn - bRad, dxN, 20);
             }
 
 

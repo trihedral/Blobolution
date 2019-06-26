@@ -24,7 +24,7 @@ public class BlobCreatorFrame extends JFrame{
             colorVarArea, ageArea, sizeArea, speedArea, healthArea;
     JTextArea numArea;
     private JRadioButton expRadio, oneRadio, zeroRadio;
-    private JCheckBox markBox;
+    private JCheckBox markBox, knowColorBox;
     JCheckBox randBox;
     private Blobolution3 mainFrame;
 
@@ -59,6 +59,7 @@ public class BlobCreatorFrame extends JFrame{
         redSlider.setValue(blob.color.getRed());
         greenSlider.setValue(blob.color.getGreen());
         blueSlider.setValue(blob.color.getBlue());
+        knowColorBox.setSelected(blob.knowSelf);
     }
 
     private void setup(){
@@ -163,16 +164,18 @@ public class BlobCreatorFrame extends JFrame{
         JPanel activationPanel = new JPanel();
         activationPanel.setLayout(new GridLayout(3,1));
         JPanel detailsPanel = new JPanel();
-        detailsPanel.setLayout(new GridLayout(4,1));
+        detailsPanel.setLayout(new GridLayout(5,1));
         detailsPanel.setBorder(BorderFactory.createTitledBorder("Brain"));
         JPanel detailsPanel1 = new JPanel();
         JPanel detailsPanel2 = new JPanel();
         JPanel detailsPanel3 = new JPanel();
         JPanel detailsPanel4 = new JPanel();
+        JPanel detailsPanel5 = new JPanel();
         perceiveArea = new JTextArea(1, 3);
         hiddenRowsArea = new JTextArea(1, 3);
         hiddenColumnsArea = new JTextArea(1, 3);
         brainVarArea = new JTextArea(1, 3);
+        knowColorBox = new JCheckBox("Know Own Color");
         expRadio = new JRadioButton("1 / [ 1-exp(i) ]");
         oneRadio = new JRadioButton("i");
         zeroRadio = new JRadioButton(("0 (Brainless)"));
@@ -196,10 +199,15 @@ public class BlobCreatorFrame extends JFrame{
         detailsPanel4.add(new JLabel("Child ANN Variance "));
         detailsPanel4.add(brainVarArea);
         detailsPanel4.setBorder(new EmptyBorder(1, 1, 1, 1));
+        //detailsPanel5.add(new JLabel("Know Own Color: "));
+        //detailsPanel5.add(knowColorBox);
+        detailsPanel5.setBorder(new EmptyBorder(1, 1, 1, 1));
         detailsPanel.add(detailsPanel1);
         detailsPanel.add(detailsPanel2);
         detailsPanel.add(detailsPanel3);
         detailsPanel.add(detailsPanel4);
+        //detailsPanel.add(detailsPanel5);
+        detailsPanel.add(knowColorBox);
 
         aNNPanel.add(generalPanel);
         aNNPanel.add(detailsPanel);
@@ -265,7 +273,7 @@ public class BlobCreatorFrame extends JFrame{
             int num = Integer.parseInt(numArea.getText());
             for (int i = 0; i < num; i++) {
                 int maxPerc = Integer.parseInt(perceiveArea.getText());
-                Blob blob = new Blob(maxPerc, mainFrame.getWidth(), mainFrame.getHeight(), blobs);
+                Blob blob = new Blob(maxPerc, mainFrame.getWidth(), mainFrame.getHeight(), knowColorBox.isSelected(), blobs);
                 blob.brainVar = Double.parseDouble(brainVarArea.getText());
                 blob.colorVar = Double.parseDouble(colorVarArea.getText());
                 if (ageArea.getText().equals("-")){
@@ -283,7 +291,7 @@ public class BlobCreatorFrame extends JFrame{
                 if (expRadio.isSelected()) fType = 0;
                 if (oneRadio.isSelected()) fType = 1;
                 if (zeroRadio.isSelected()) fType = 2;
-                int ins = blob.maxPerceivable * 5 + 3;
+                int ins = blob.maxPerceivable * 5 + 3*(blob.knowSelf ? 1 : 0); //////////////////////////////////////////////// WHY HERE?!
                 int rows = Integer.parseInt(hiddenRowsArea.getText());
                 int cols = Integer.parseInt(hiddenColumnsArea.getText());
                 int outs = 1;

@@ -28,12 +28,13 @@ public class Blob{
     NeuralNet brain;
     boolean marked;
     boolean grabbed;
+    boolean knowSelf;
 
     /**
      * Initializes a Blob with default/random values
       */
 
-    public Blob(int maxPerc, double winX, double winY, ArrayList<Blob> blobs){
+    public Blob(int maxPerc, double winX, double winY, boolean knowYourself, ArrayList<Blob> blobs){
         rand = new Random();
         numKids = 0;
         maxAge = 0;     // immortal
@@ -52,12 +53,14 @@ public class Blob{
         brainVar = .05;
         colorVar = .05;
         timeInc = 25;
-        brain = new NeuralNet((maxPerceivable)*5 + 3, 5, 2, 1, 1, false);  // inputs, hidden rows, hidden columns, outputs, activation function type
+        int numIn = maxPerceivable*5 + 3*(knowYourself ? 1 : 0);
+        brain = new NeuralNet(numIn, 5, 2, 1, 1, false);  // inputs, hidden rows, hidden columns, outputs, activation function type
         generation = 0;
         color = new Color(
                 rand.nextInt(255),rand.nextInt(255),rand.nextInt(255));
         x = winX*rand.nextDouble();
         y = winY*rand.nextDouble();
+        knowSelf = knowYourself;
     }
 
     /**
@@ -87,6 +90,7 @@ public class Blob{
         color = blob.color;
         x = blob.x;
         y = blob.y;
+        knowSelf = blob.knowSelf;
     }
 
     private void varyChild(){
@@ -153,9 +157,11 @@ public class Blob{
             int red = Integer.parseInt(data.substring(p1, p2));
             p1 = p2+1; p2 = data.indexOf(' ', p1);
             int green = Integer.parseInt(data.substring(p1, p2));
-            p1 = p2+1; p2 = data.indexOf('\n', p1);
+            p1 = p2+1; p2 = data.indexOf(' ', p1);
             int blue = Integer.parseInt(data.substring(p1, p2));
             color = new Color(red, green, blue);
+            p1 = p2+1; p2 = data.indexOf('\n', p1);
+            knowSelf = Boolean.parseBoolean(data.substring(p1, p2));
 
             p1 = p2+1; p2 = data.indexOf(' ', p1);
             int fType = Integer.parseInt(data.substring(p1, p2));
@@ -250,9 +256,11 @@ public class Blob{
             data.add(nearBlobs[i].color.getGreen()/255.0);
             data.add(nearBlobs[i].color.getBlue()/255.0);
         }
-        data.add(color.getRed()   / 255.0);
-        data.add(color.getGreen() / 255.0);
-        data.add(color.getBlue()  / 255.0);
+        if (knowSelf) {
+            data.add(color.getRed() / 255.0);
+            data.add(color.getGreen() / 255.0);
+            data.add(color.getBlue() / 255.0);
+        }
         //data.add(brain.getOutput(0));
 
         // get neural net output //
@@ -366,6 +374,8 @@ public class Blob{
             fw.append(String.valueOf(color.getGreen()));
             fw.append(" ");
             fw.append(String.valueOf(color.getBlue()));
+            fw.append(" ");
+            fw.append(String.valueOf(knowSelf));
             fw.append("\n");
 
             fw.append(String.valueOf(brain.functionType));

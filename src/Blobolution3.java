@@ -190,7 +190,7 @@ public class Blobolution3 extends JFrame {
 
     private class NewBlobItemListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            blobCreatorFrame = new BlobCreatorFrame(new Blob(1, getWidth(), getHeight(), blobs), frame);
+            blobCreatorFrame = new BlobCreatorFrame(new Blob(1, getWidth(), getHeight(), true, blobs), frame);
         }
     }
 

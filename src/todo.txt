@@ -3,10 +3,3 @@ Neural output threshold
 Enable ANN feedback (memory)
 Minimize on-top windows when focus is lost
 purge certain % option
-
-
-
-
-BlobCreatorFrame
--------------
-Input own color or not to ANN - Blob 250
