@@ -6,46 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4c1c377-1adf-486d-b37a-4d12b7a0ce9a" name="Default" comment="Adds option to prevent blobs from knowing their own color">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Blobolution_3_jar/Blobolution 3.jar" afterPath="$PROJECT_DIR$/out/artifacts/Blobolution_3_jar/Blobolution 3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$1.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$10.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$11.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$12.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$13.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$14.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$15.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$16.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$17.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$18.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$19.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$2.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$20.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$21.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$21.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$22.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$22.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$3.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$4.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$5.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$6.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$7.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$8.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$9.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blob.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blob.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobMouseMotionListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BlobMouseMotionListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BreedButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$BreedButtonListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$CopyButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$CopyButtonListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$PaintPanel.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$PaintPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$SaveButtonListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$SaveButtonListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$TimerListen.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$TimerListen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$WeightLine.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame$WeightLine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/BlobDataFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$NewBlobItemListener.class" afterPath="$PROJECT_DIR$/out/production/Blobolution 3/Blobolution3$NewBlobItemListener.class" />
+    <list default="true" id="f4c1c377-1adf-486d-b37a-4d12b7a0ce9a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blob.java" afterPath="$PROJECT_DIR$/src/Blob.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BlobCreatorFrame.java" afterPath="$PROJECT_DIR$/src/BlobCreatorFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BlobDataFrame.java" afterPath="$PROJECT_DIR$/src/BlobDataFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blobolution3.java" afterPath="$PROJECT_DIR$/src/Blobolution3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/todo.txt" afterPath="$PROJECT_DIR$/src/todo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Neuron.java" afterPath="$PROJECT_DIR$/src/Neuron.java" />
     </list>
     <ignored path="Blobolution 3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,8 +87,8 @@
       <file leaf-file-name="BlobDataFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BlobDataFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2838">
-              <caret line="273" column="53" selection-start-line="273" selection-start-column="53" selection-end-line="273" selection-end-column="53" />
+            <state relative-caret-position="355">
+              <caret line="389" column="34" selection-start-line="389" selection-start-column="30" selection-end-line="389" selection-end-column="34" />
               <folding>
                 <element signature="class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
                 <element signature="method#windowClosing#0;class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
@@ -142,7 +105,7 @@
       <file leaf-file-name="Blob.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="-2772">
               <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -154,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NeuralNet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NeuralNet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NeuralNet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-2839">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -166,12 +129,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Neuron.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Neuron.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Neuron.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="396">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1933#1934#0" expanded="true" />
+                <element signature="e#1995#1996#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -699,21 +667,28 @@
       <option name="project" value="LOCAL" />
       <updated>1524205506332</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adds option to prevent blobs from knowing their own color">
+      <created>1561527259506</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561527259506</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19529006" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19529006" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3911545" sideWeight="0.50133336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3911545" sideWeight="0.49866667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291212" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25502583" sideWeight="0.49866667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -794,13 +769,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NeuralNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1439,50 +1407,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BlobDataFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2838">
-          <caret line="273" column="53" selection-start-line="273" selection-start-column="53" selection-end-line="273" selection-end-column="53" />
-          <folding>
-            <element signature="class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
-            <element signature="method#windowClosing#0;class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
-            <element signature="class#BreedButtonListener#0;class#BlobDataFrame#0" expanded="false" />
-            <element signature="class#CopyButtonListener#0;class#BlobDataFrame#0" expanded="false" />
-            <element signature="class#TimerListen#0;class#BlobDataFrame#0" expanded="false" />
-            <element signature="method#mouseDragged#0;class#BlobMouseMotionListener#0;class#BlobDataFrame#0" expanded="false" />
-            <element signature="method#isInBoundBox#0;class#WeightLine#0;class#BlobDataFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NeuralNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#10535#10554#0" expanded="false" />
-            <element signature="docComment;method#vary#0;class#Blob#0" expanded="false" />
-            <element signature="method#vary#0;class#Blob#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1510,11 +1439,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Neuron.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BlobDataFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="389" column="34" selection-start-line="389" selection-start-column="30" selection-end-line="389" selection-end-column="34" />
+          <folding>
+            <element signature="class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
+            <element signature="method#windowClosing#0;class#BlobWindowAdapter#0;class#BlobDataFrame#0" expanded="false" />
+            <element signature="class#BreedButtonListener#0;class#BlobDataFrame#0" expanded="false" />
+            <element signature="class#CopyButtonListener#0;class#BlobDataFrame#0" expanded="false" />
+            <element signature="class#TimerListen#0;class#BlobDataFrame#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#BlobMouseMotionListener#0;class#BlobDataFrame#0" expanded="false" />
+            <element signature="method#isInBoundBox#0;class#WeightLine#0;class#BlobDataFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2772">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#10535#10554#0" expanded="false" />
+            <element signature="docComment;method#vary#0;class#Blob#0" expanded="false" />
+            <element signature="method#vary#0;class#Blob#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Neuron.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#1995#1996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NeuralNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2839">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
